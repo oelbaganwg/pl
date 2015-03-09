@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parkway Lofts</title>
+	<meta name="viewport" content="width=device-width" />
+	<!-- Styles -->
+	<link type="text/css" href="css/mainStyles.css" rel="stylesheet" />
+	<style type="text/css">
+		#outer_container, #imagePan{height:460px; width:980px;}
+		#outer_container{}
+		#imagePan{position:relative; overflow:hidden;}
+		#imagePan .container{position:relative; left:0;}
+		#section1{height:560px;}
+	</style>
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/ecmascript" src="js/jquery.easing.js"></script>
+	<script type="text/ecmascript" src="js/jquery.corner.js"></script>
+	<script type="text/javascript" src="js/jquery-valign.js"></script>
+	<script type="text/javascript" src="js/jquery.preloader.js"></script>
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+	<script type="text/javascript" src="js/baseScripts.js"></script>
+	<script type="text/ecmascript" src="js/mapScripts.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+if( $("#error").html() != "") {
+				$('body').css('overflow', 'hidden');
+				$("#theContactHolder").show();
+		    }
+*/
+		    $('#section1').css('opacity', 0);
+		    $('#section2').css('opacity', 0);
+		    $('#theFooter').css('opacity', 0);
+		    
+		    $('#homeContentHolder > IMG').load(function() {
+/* 		    	$(this).css('visibility','visible'); */
+    			$('#viewEast').fadeIn(500, 'easeOutQuad'); 
+			});
+		   	
+		   	$('#viewEast').attr('src', 'images/view-east.jpg');
+		   	$('#viewWest').attr('src', 'images/view-west.jpg');
+		   	
+		   	$('#neighborhoodIMG-Top').attr('src', 'images/neighborhood-1a.jpg');
+		   	$('#neighborhoodIMG-D').attr('src', 'images/neighborhood-1d.jpg');
+		   	$('#neighborhoodIMG-B').attr('src', 'images/neighborhood-1b.jpg');
+		   	$('#neighborhoodIMG-C').attr('src', 'images/neighborhood-1c.jpg');
+		    
+		    $('#section1').waitForImages(function() {
+    			$('#section1').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#neighborhoodIMG-Top').delay(700).fadeIn(500, 'easeOutQuad');
+    			$('#neighborhoodIMG-D').delay(1000).fadeIn(500, 'easeOutQuad');
+    			$('#neighborhoodIMG-B').delay(1300).fadeIn(500, 'easeOutQuad');
+    			$('#neighborhoodIMG-C').delay(1600).fadeIn(500, 'easeOutQuad'); 
+			});
+			
+		    $('#section2').waitForImages(function() {
+    			$('#section2').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#section2Separator').delay(500).fadeIn(500, 'easeOutQuad');
+    			$('#theFooter').delay(1800).animate({'opacity': 1}, 500, 'easeOutQuad');
+			});
+			
+		});
+	</script>
+	
+
+</head>
+
+<body>
+
+<div id="theContactHolder" style="display:none;">
+	<div class="contactform-frame">
+		<div id="contactformFrameBorder">
+
+	            	<div id="backToPage">
+	            		<img style="float:right;margin-left:5px;margin-top:4px;" src="images/closeBTN.png" width="10" height="8"/>
+	            		<div style="float:right;margin-top:2px;">BACK TO FORM</div>
+	            		<div class="clearFloat"></div>
+	            	</div>
+	                <div id="popupForm">
+	                	<div id="popupHeadline">STAY CONNECTED</div>
+	                	<form id="register" name="register" method="post">
+	        				<div class="contactRow">
+	        					<div class="form-label">First & Last Name*</div>
+	        					<input id="firstname" name="formdata_name" type="text">
+	        					<div style="clear:both"></div>
+	        				</div>
+	        				
+	                        <div class="contactRow">
+	                        	<div class="form-label">Email Address*</div>
+	                        	<input id="email" name="formdata_email" type="email">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Phone</div>
+	                        	<input id="phone" name="formdata_phone" type="tel">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">How Did You Hear<BR>About Us?</div>
+	                        	<input id="type" name="formdata_residence" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Comments</div>
+	                        	<input id="comments" name="formdata_comments" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	        			
+		        			<div class="required-and-submit clearfix">
+		        			<!-- input fields for google conversions -->
+							<input type="hidden" value="" name="formdata_medium">
+							<input type="hidden" value="" name="formdata_campaign">
+							<input type="hidden" value="" name="formdata_keyword">
+							<input type="hidden" value="" name="formdata_keyword_source">
+							<input type="hidden" value="" name="formdata_keyword_medium">
+							<input type="hidden" value="Contact Page" name="formdata_form_name">
+		        				<div class="requestSubmit" id="formSubmitBTN">SUBMIT</div>
+		        				<div class="required">* Required Field</div>
+		        				<div class="clearFloat"></div>
+		        			</div>
+	                  </form>	
+	                </div>
+	                <div style="clear:both"></div>
+
+		</div>
+	</div>
+</div>
+
+<div id="theHeader">
+	
+	<div id="navigation">
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="residences.html">RESIDENCES</a>
+				<div class="rolledNavBTN"><a href="residences.html">RESIDENCES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="amenities.html">AMENITIES</a>
+				<div class="rolledNavBTN"><a href="amenities.html">AMENITIES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="floorplans.html">FLOORPLANS</a>
+				<div class="rolledNavBTN"><a href="floorplans.html">FLOORPLANS</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div id="parkwayLogo">
+			<a href="index.html"><img src="images/parkway-lofts-logo.png" alt="Parkway Lofts" width="140" height="156" /></a>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="contact-us.html">CONTACT US</a>
+				<div class="rolledNavBTN"><a href="contact-us.html">CONTACT US</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="gallery.html">GALLERY</a>
+				<div class="rolledNavBTN"><a href="gallery.html">GALLERY</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight selectedNav">
+			<div class="navBTNText">
+				<a href="neighborhood.html">NEIGHBORHOOD</a>
+				<div class="rolledNavBTN"><a href="neighborhood.html">NEIGHBORHOOD</a></div>
+			</div>	
+			<div class="navBackOver"></div>
+		</div>	
+	</div>
+	<div id="becomeVipBTN">BECOME A VIP</div>
+	<div class="clearFloat"></div>
+	
+</div>
+
+<div id="homeContent">
+	<div id="homeContentHolder">		
+		<img src="images/view-east.jpg" alt="view east" id="viewEast" class="panning"  width="1480" height="460" style="display:none" />
+<!-- 		<img src="images/view-west.jpg" alt="view west" id="viewWest" class="panning"  width="1480" height="460" style="display:none" />  -->
+		<div id="viewBTNs">
+			<div class="viewBTN viewBTNSelected" id="viewBTN-East">EAST</div>
+			<div class="viewBTN" id="viewSeparator">|</div>
+			<div class="viewBTN viewBTNUnselected" id="viewBTN-West">WEST</div>
+		</div>      
+	</div>
+</div>
+
+<div id="theContents">
+	<div class="sectionHolder" id="section1">
+		<div class="column1 headlineRow">
+			<div class="largeHeadline">EVERYTHING<BR>YOU NEED</div>
+		</div>
+		<div class="column2 headlineRow">
+			Nearby Montclair is an eclectic New Jersey town with tree lined streets, artistic cinemas featuring independent and art-house films, art museums, public parks and two nature preserves.  Only   
+		</div>
+		<div class="column3 headlineRow">
+			moments from Parkway Lofts, Montclair is a premiere shopping and restaurant destination; traditional yet modern while maintaining a sophisticated suburban appeal.
+		</div>
+		<div class="clearFloat"></div>
+		<div class="column2colspan2" id="neighborhoodIMG-Top"><img src="images/neighborhood-1a.jpg" alt="neighborhood-1a" width="665" height="220" /></div>
+		<div class="column3" id="neighborhoodIMG-D">
+			<div class="columnImage"><img src="images/neighborhood-1d.jpg" alt="neighborhood-1d" width="320" height="430" /></div>
+		</div>
+		<div class="column1" id="neighborhoodIMG-B">
+			<div class="columnImage"><img src="images/neighborhood-1b.jpg" alt="neighborhood-1b" width="320" height="220" /></div>
+		</div>		
+		<div class="column2" id="neighborhoodIMG-C">
+			<div class="columnImage"><img src="images/neighborhood-1c.jpg" alt="neighborhood-1c" width="320" height="220" /></div>
+		</div>
+		
+		<div class="clearFloat"></div>
+	</div>
+	<div class="sectionSeparator" id="section2Separator"></div>
+	<div class="sectionHolder" id="section2">
+		<div class="column1 headlineRow">
+			<div class="largeHeadline">AT YOUR<BR>DOORSTEP</div>
+		</div>
+		<div class="column2 headlineRow">
+			Bloomfield NJ: The suburban community of Bloomfield is a growing one inspired by convenience, commuter ease and accessibility. 
+		</div>
+		<div class="column3 headlineRow">
+			This historic district is  rich with tradition, featuring many landmarks  and newly revitalized parks and services.  
+		</div>
+		<div class="clearFloat"></div>
+		
+		<div class="column1">
+			<div class="propertyInformation" id="urbanOutfitters">
+				<div class="propertyInformationTitle">URBAN OUTFITTERS</div>
+				<div class="propertyInformationDescription">
+					Clothing Store<BR>
+					20 South Park Street<BR>
+					Montclair, NJ 07042
+				</div>
+				<div class="propertyImage"><img src="images/neighborhood-1b.jpg" alt="neighborhood-1b" width="320" height="350" /></div>
+			</div>
+			
+		</div>		
+		
+		<div class="column2colspan2" id="neighborhood-map">
+			<div id="mapBox">
+				<div class="mapItem mapItemUnselected" id="mapItem-wholeFoods"><div class="arrowOnLeft"></div><div class="mapItemTitle">WHOLE FOODS</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-starbucks"><div class="arrowOnRight"></div><div class="mapItemTitle">STARBUCKS</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-EganAndSons"><div class="arrowOnRight"></div><div class="mapItemTitle">EGAN & SONS</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-halcyonBrasserie"><div class="arrowOnLeft"></div><div class="mapItemTitle">HALCYON BRASSERIE</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-luigis"><div class="arrowOnRight"></div><div class="mapItemTitle">LUIGI'S</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-firstUnitedChurch"><div class="arrowOnLeft"></div><div class="mapItemTitle">FIRST UNITED METHODIST CHURCH</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-restaurantBlu"><div class="arrowOnRight"></div><div class="mapItemTitle">RESTAURANT BLU</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-urbanOutfitters"><div class="arrowOnLeft"></div><div class="mapItemTitle">URBAN OUTFITTERS</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-raymonds"><div class="arrowOnRight"></div><div class="mapItemTitle">RAYMOND'S</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-anthropologie"><div class="arrowOnLeft"></div><div class="mapItemTitle">ANTHROPOLOGIE</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-woodhouseDaySpa"><div class="arrowOnRight"></div><div class="mapItemTitle">WOODHOUSE DAY SPA</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-cubanPetes"><div class="arrowOnLeft"></div><div class="mapItemTitle">CUBAN PETE'S</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-bangz"><div class="arrowOnRight"></div><div class="mapItemTitle">BANGZ</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-theOrangeSquirrel"><div class="arrowOnLeft"></div><div class="mapItemTitle">THE ORANGE SQUIRREL</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-outpostInTheBurbs"><div class="arrowOnRight"></div><div class="mapItemTitle">OUTPOST IN THE BURBS</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-theWellmontTheatre"><div class="arrowOnLeft"></div><div class="mapItemTitle">THE WELLMONT THEATRE</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-montclairPublicLibrary"><div class="arrowOnRight"></div><div class="mapItemTitle">MONTCLAIR PUBLIC LIBRARY</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-greekTaverna"><div class="arrowOnLeft"></div><div class="mapItemTitle">GREEK TAVERNA</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-shoppingPlaza"><div class="arrowOnLeft"></div><div class="mapItemTitle">SHOPPING PLAZA</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-glenfieldPark"><div class="arrowOnRight"></div><div class="mapItemTitle">GLENFIELD PARK</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-ridgewoodElementarySchool"><div class="arrowOnRight"></div><div class="mapItemTitle">RIDGEWOOD ELEMENTARY SCHOOL</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-christEpiscopalChurch"><div class="arrowOnRight"></div><div class="mapItemTitle">CHRIST EPISCOPAL CHURCH</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-glenRidgeChurch"><div class="arrowOnRight"></div><div class="mapItemTitle">GLEN RIDGE CONGREGATIONAL CHURCH</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-stJohnsChurch"><div class="arrowOnRight"></div><div class="mapItemTitle">ST JOHN'S LUTHERAN CHURCH</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-bloomfieldSteakSeafood"><div class="arrowOnRight"></div><div class="mapItemTitle">BLOOMFIELD STEAK & SEAFOOD</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-bmwOfBloomfield"><div class="arrowOnLeft"></div><div class="mapItemTitle">BMW OF BLOOMFIELD</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-watsessingPark"><div class="arrowOnRight"></div><div class="mapItemTitle">WATSESSING PARK</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-watsessingStation"><div class="arrowOnLeft"></div><div class="mapItemTitle">WATSESSING STATION</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-ethicalPetProducts"><div class="arrowOnLeft"></div><div class="mapItemTitle">ETHICAL PET PRODUCTS</div><div class="clearFloats"></div></div>
+				<div class="mapItem mapItemUnselected" id="mapItem-dunkinDonuts"><div class="arrowOnLeft"></div><div class="mapItemTitle">DUNKIN' DONUTS</div><div class="clearFloats"></div></div>
+			</div>
+		</div>
+		
+		<div class="clearFloat"></div>
+	</div>
+</div>
+
+<div id="theFooter">
+	<div id="footerLeft">5 LAWRENCE STREET | BLOOMFIELD NJ | 07003 | 201.308.8200</div>
+	<div id="footerRight"></div>
+	<div class="clearFloat"></div>
+</div>
+
+</body>
+</html>

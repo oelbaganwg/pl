@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parkway Lofts</title>
+	<meta name="viewport" content="width=device-width" />
+	<!-- Styles -->
+	<link type="text/css" href="css/mainStyles.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />	
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/jquery-valign.js"></script>
+	<script type="text/javascript" src="js/jquery.preloader.js"></script>
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+	
+	<script type="text/javascript" src="js/slides.js"></script>
+	<script type="text/javascript" src="js/baseScripts.js"></script>
+	<script type="text/javascript" src="js/residenceFPScripts.js"></script>
+	
+	<script type="text/javascript">
+		
+		$(function(){
+		
+			$(".floorplansImage").preloader();
+			
+			$('#floorplanEntry1').css('opacity', 0);
+		    $('#floorplanEntry2').css('opacity', 0);
+		    $('#theFooter').css('opacity', 0);
+		    
+		    $('#floor-open IMG').attr('src', 'images/floorplans/building-floor-open.png');
+		    $('#floor-2 IMG').attr('src', 'images/floorplans/building-floor2.png');
+		    $('#floor-3 IMG').attr('src', 'images/floorplans/building-floor3.png');
+		    $('#floor-4 IMG').attr('src', 'images/floorplans/building-floor4.png');
+		    $('#floor-5 IMG').attr('src', 'images/floorplans/building-floor5.png');
+		    $('#floor-6 IMG').attr('src', 'images/floorplans/building-floor6.png');
+		    $('#floor-7 IMG').attr('src', 'images/floorplans/building-floor7.png');
+		    $('#floor-8 IMG').attr('src', 'images/floorplans/building-floor-penthouse.png');
+		    
+		    $('#floorplanEntry1 > .floorplansImage > a > IMG').attr('src', 'images/floorplans/floorplanSample-2-studio.png');
+		    $('#floorplanEntry2 > .floorplansImage > a > IMG').attr('src', 'images/floorplans/floorplanSample-26-1br.png');
+		    $('#floorplanEntry3 > .floorplansImage > a > IMG').attr('src', 'images/floorplans/floorplanSample-88-2br.png');
+		   	
+		   	$('#homeContentHolder > IMG').waitForImages(function() {
+    			$('#homeContentHolder > IMG').fadeIn(500, 'easeOutQuad'); 
+			});
+			
+			$('#residenceBuildingFloors').waitForImages(function() {
+    			$('#residenceBuildingFloors').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#residenceBuildingFloors').slides({
+					preload: {
+	 					active: true,
+	 					image: "images/loading.gif"
+	 				},
+	 				effects: {
+	 					navigation: "fade",
+	 					pagination: "fade"
+					},
+					fade: {
+	 					interval: 150,
+	 					crossfade: true, // [Boolean] TODO: add this feature. Crossfade the slides, great for images, bad for text
+	 					easing: "" // [String] Dependency: jQuery Easing plug-in <http://gsgd.co.uk/sandbox/jquery/easing/>
+					},
+					startAtSlide:2,
+					pagination:false,
+					navigation:false,
+					width:1480,
+					height:460
+				});
+			});
+			
+			$('#floorplanEntry1').waitForImages(function() {
+    			$('#floorplanEntry1').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+			});
+			
+		    $('#floorplanEntry2').waitForImages(function() {
+    			$('#floorplanEntry2').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#section2Separator').delay(500).fadeIn(500, 'easeOutQuad');
+			});
+			
+			$('#floorplanEntry3').waitForImages(function() {
+    			$('#floorplanEntry3').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#section3Separator').delay(500).fadeIn(500, 'easeOutQuad');
+    			$('#theFooter').delay(800).animate({'opacity': 1}, 500, 'easeOutQuad');
+			});
+
+		
+
+		});
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+if( $("#error").html() != "") {
+				$('body').css('overflow', 'hidden');
+				$("#theContactHolder").show();
+		    }
+*/
+		});
+	</script>
+	<script type="text/javascript" src="js/javascript-video-scrubber.js"></script>
+	
+	
+</head>
+
+<body>
+
+<div id="theContactHolder" style="display:none;">
+	<div class="contactform-frame">
+		<div id="contactformFrameBorder">
+
+	            	<div id="backToPage">
+	            		<img style="float:right;margin-left:5px;margin-top:4px;" src="images/closeBTN.png" width="10" height="8"/>
+	            		<div style="float:right;margin-top:2px;">BACK TO FORM</div>
+	            		<div class="clearFloat"></div>
+	            	</div>
+	                <div id="popupForm">
+	                	<div id="popupHeadline">STAY CONNECTED</div>
+	                	<form id="register" name="register" method="post">
+	        				<div class="contactRow">
+	        					<div class="form-label">First & Last Name*</div>
+	        					<input id="firstname" name="formdata_name" type="text">
+	        					<div style="clear:both"></div>
+	        				</div>
+	        				
+	                        <div class="contactRow">
+	                        	<div class="form-label">Email Address*</div>
+	                        	<input id="email" name="formdata_email" type="email">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Phone</div>
+	                        	<input id="phone" name="formdata_phone" type="tel">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">How Did You Hear<BR>About Us?</div>
+	                        	<input id="type" name="formdata_residence" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Comments</div>
+	                        	<input id="comments" name="formdata_comments" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	        			
+		        			<div class="required-and-submit clearfix">
+		        			<!-- input fields for google conversions -->
+							<input type="hidden" value="" name="formdata_medium">
+							<input type="hidden" value="" name="formdata_campaign">
+							<input type="hidden" value="" name="formdata_keyword">
+							<input type="hidden" value="" name="formdata_keyword_source">
+							<input type="hidden" value="" name="formdata_keyword_medium">
+							<input type="hidden" value="Contact Page" name="formdata_form_name">
+		        				<div class="requestSubmit" id="formSubmitBTN">SUBMIT</div>
+		        				<div class="required">* Required Field</div>
+		        				<div class="clearFloat"></div>
+		        			</div>
+	                  </form>	                
+	                </div>
+	                <div style="clear:both"></div>
+
+		</div>
+	</div>
+</div>
+
+<div id="floorplansHolder">
+	<div id="floorplansLoader">
+		<img src="images/30.gif" alt="fancy_loading" width="64" height="8" />
+	</div>
+	<div id="floorplansInHere">
+	
+	</div>
+</div>
+
+<div id="theHeader">
+	
+	<div id="navigation">
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="residences.html">RESIDENCES</a>
+				<div class="rolledNavBTN"><a href="residences.html">RESIDENCES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="amenities.html">AMENITIES</a>
+				<div class="rolledNavBTN"><a href="amenities.html">AMENITIES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft selectedNav">
+			<div class="navBTNText">
+				<a href="floorplans.html">FLOORPLANS</a>
+				<div class="rolledNavBTN"><a href="floorplans.html">FLOORPLANS</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div id="parkwayLogo">
+			<a href="index.html"><img src="images/parkway-lofts-logo.png" alt="Parkway Lofts" width="140" height="156" /></a>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="contact-us.html">CONTACT US</a>
+				<div class="rolledNavBTN"><a href="contact-us.html">CONTACT US</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="gallery.html">GALLERY</a>
+				<div class="rolledNavBTN"><a href="gallery.html">GALLERY</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="neighborhood.html">NEIGHBORHOOD</a>
+				<div class="rolledNavBTN"><a href="neighborhood.html">NEIGHBORHOOD</a></div>
+			</div>	
+			<div class="navBackOver"></div>
+		</div>	
+	</div>
+	<div id="becomeVipBTN">BECOME A VIP</div>
+	<div class="clearFloat"></div>
+	
+</div>
+
+<div id="homeContent">
+	<div id="homeContentHolder">		
+		<div class="sectionHolder">
+		<div id="residenceBuildingSelector">
+        	
+        	<div id="residenceBuildingNavigation">
+        		<div class="floorplans-floorSelector fpUnselected" id="fpBTN-7"><a href="floorplans-floor-penthouse.html">Penthouse</a></div>
+        		<div class="floorplans-floorSelector fpUnselected" id="fpBTN-6"><a href="floorplans-floor7.html">Floor - 7</a></div>
+        		<div class="floorplans-floorSelector fpUnselected" id="fpBTN-5"><a href="floorplans-floor6.html">Floor - 6</a></div>
+        		<div class="floorplans-floorSelector fpUnselected" id="fpBTN-4"><a href="floorplans-floor5.html">Floor - 5</a></div>
+        		<div class="floorplans-floorSelector fpUnselected" id="fpBTN-3"><a href="floorplans-floor4.html">Floor - 4</a></div>
+        		<div class="floorplans-floorSelector fpUnselected" id="fpBTN-2"><a href="floorplans-floor3.html">Floor - 3</a></div>
+        		<div class="floorplans-floorSelector fpSelected" id="fpBTN-1"><a href="floorplans.html">Floor - 2</a></div>
+        	</div>    	
+        	        			
+    	</div>
+    	
+    	<div id="rotatingBuildingNavs">
+   			<div id="rotatingBuildingNav-left"><img src="images/buildingArrow-previous.png" alt="previous" width="21" height="35" /></div>
+   			<div id="rotatingBuildingNav-right"><img src="images/buildingArrow-next.png" alt="next" width="21" height="35" /></div>
+   		</div>
+    	
+    	<div id="rotatingBuilding">    		
+    		<img id="video" class="maskThis" src="frames/earth_000000.png" alt="" />
+    	</div>
+    	
+    		<div id="residenceBuildingFloors">
+	        	<div class="buildingFloor" id="floor-open"><img src="" alt="building-open" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-2"><img src="" alt="building-2" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-3"><img src="" alt="building-3" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-4"><img src="" alt="building-4" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-5"><img src="" alt="building-5" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-6"><img src="" alt="building-6" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-7"><img src="" alt="building-7" width="1480" height="460" /></div>
+	        	<div class="buildingFloor" id="floor-8"><img src="" alt="building-8" width="1480" height="460" /></div>
+        	</div> 
+    	
+        <div id="selectAFloorHeadline">SELECT A FLOOR</div>
+		</div>
+	</div>
+</div>
+
+<div id="theContents">
+
+	
+	
+	<div class="sectionHolder">
+		
+		<div class="floorplansEntry" id="floorplanEntry1">
+			<div class="floorplansEntryInformation">
+				<div class="floorplansEntryTopText">
+	        		<div class="floorplansEntryHeadline">SECOND<BR>FLOOR STUDIO</div>
+	        		<div class="floorplansInformation">STUDIO / 1 BATHROOM</div>
+	        		<div class="floorplansFeatures">
+	        			<div class="floorplansResidenceFeatures">
+	        				<div class="floorplansBuildingFeaturesHeadline">RESIDENCE FEATURES</div>
+	        				<div class="floorplansFeauresCol">
+	        				<ul>
+	        					<li>17-foot ceiling heights</li>
+	        					<li>New 13-foot, insulated windows</li>
+	        					<li>Original architectural features</li>
+	        					<li>Gourmet kitchens with stainless steel appliances, granite counter tops, glass tile backsplash and custom cabinetry</li>
+	        					<li>Exposed columns and beams</li>
+	        				</ul>
+	        				</div>
+	        				<div class="floorplansFeauresCol">
+	        				<ul>
+	        					<li>Polished concrete floors</li>
+	        					<li>Laundry in every home</li>
+	        					<li>Sustainable LEED design</li>
+								<li>Energy-efficient systems</li>
+								<li>Wi-Fi pre-wiring</li>
+	        				</ul>
+	        				</div>
+	        			</div>
+	        			<div class="clearFloat"></div>
+	        		</div>
+	        	</div>
+	        	<div class="floorplansEntryBottomText">
+	        		<div class="floorplansEntryLinkIcon"><img src="images/floorplanLinkIcon.png" alt="floorplanLinkIcon" width="19" height="23" /></div>
+	        		<div class="floorplansEntryLinkText"><a href="floorplans/floorSample.html" class="fpEnlargeBTN">Enlarge</a> | <a href="floorplans/pdf/2.pdf" target="_blank">Download PDF</a></div>
+	        		<div class="clearFloat"></div>
+	        	</div>
+			</div>
+        	<div class="floorplansImage">
+        		<a href="floorplans/floorSample.html" class="fpEnlargeBTN"><img src="" alt="Floorplans Sample" width="500" height="437" /></a>
+        	</div>
+        	<div class="clearFloat"></div>
+        </div>
+        
+        <div class="sectionSeparator" id="section2Separator"></div>
+        
+        <div class="floorplansEntry" id="floorplanEntry2">
+			<div class="floorplansEntryInformation">
+				<div class="floorplansEntryTopText">
+	        		<div class="floorplansEntryHeadline">SECOND<BR>FLOOR 1BR</div>
+	        		<div class="floorplansInformation">1 BEDROOM / 1 BATHROOM</div>
+	        		<div class="floorplansFeatures">
+	        			<div class="floorplansResidenceFeatures">
+	        				<div class="floorplansBuildingFeaturesHeadline">RESIDENCE FEATURES</div>
+	        				<div class="floorplansFeauresCol">
+	        				<ul>
+	        					<li>17-foot ceiling heights</li>
+	        					<li>New 13-foot, insulated windows</li>
+	        					<li>Original architectural features</li>
+	        					<li>Gourmet kitchens with stainless steel appliances, granite counter tops, glass tile backsplash and custom cabinetry</li>
+	        					<li>Exposed columns and beams</li>
+	        				</ul>
+	        				</div>
+	        				<div class="floorplansFeauresCol">
+	        				<ul>
+	        					<li>Polished concrete floors</li>
+	        					<li>Laundry in every home</li>
+	        					<li>Sustainable LEED design</li>
+								<li>Energy-efficient systems</li>
+								<li>Wi-Fi pre-wiring</li>
+	        				</ul>
+	        				</div>
+	        			</div>
+	        			<div class="clearFloat"></div>
+	        		</div>
+	        	</div>
+	        	<div class="floorplansEntryBottomText">
+	        		<div class="floorplansEntryLinkIcon"><img src="images/floorplanLinkIcon.png" alt="floorplanLinkIcon" width="19" height="23" /></div>
+	        		<div class="floorplansEntryLinkText"><a href="floorplans/floorSample.html" class="fpEnlargeBTN">Enlarge</a> | <a href="floorplans/pdf/26.pdf" target="_blank">Download PDF</a></div>
+	        		<div class="clearFloat"></div>
+	        	</div>
+			</div>
+        	<div class="floorplansImage">
+        		<a href="floorplans/floorSample.html" class="fpEnlargeBTN"><img src="" alt="Floorplans Sample" width="500" height="437" /></a>
+        	</div>
+        	<div class="clearFloat"></div>
+        </div>
+        
+        <div class="sectionSeparator" id="section3Separator"></div>
+        
+        <div class="floorplansEntry" id="floorplanEntry3">
+			<div class="floorplansEntryInformation">
+				<div class="floorplansEntryTopText">
+	        		<div class="floorplansEntryHeadline">SECOND<BR>FLOOR 2BR</div>
+	        		<div class="floorplansInformation">2 BEDROOM, 2 BATHROOM</div>
+	        	</div>
+	        	<div class="floorplansEntryBottomText">
+	        		<div class="floorplansEntryLinkIcon"><img src="images/floorplanLinkIcon.png" alt="floorplanLinkIcon" width="19" height="23" /></div>
+	        		<div class="floorplansEntryLinkText"><a href="floorplans/floorSample.html" class="fpEnlargeBTN">Enlarge</a> | <a href="floorplans/pdf/88.pdf" target="_blank">Download PDF</a></div>
+	        		<div class="clearFloat"></div>
+	        	</div>
+			</div>
+        	<div class="floorplansImage">
+        		<a href="floorplans/floorSample.html" class="fpEnlargeBTN"><img src="" alt="Floorplans Sample" width="500" height="437" /></a>
+        	</div>
+        	<div class="clearFloat"></div>
+        </div>
+        
+	</div>
+	
+</div>
+
+<div id="theFooter">
+	<div id="footerLeft">5 LAWRENCE STREET | BLOOMFIELD NJ | 07003 | 201.308.8200</div>
+	<div id="footerRight"></div>
+	<div class="clearFloat"></div>
+</div>
+
+</body>
+</html>

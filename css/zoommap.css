@@ -1,0 +1,846 @@
+body{margin:0px;padding:0px;}
+
+/* MAP NAV STYLES */
+
+.mapCategory-OfficeNavHolder{
+	padding-top:10px;
+	display: none;
+}
+.mapCategory-WarehouseNavHolder{
+	padding-top:10px;
+	display:none;
+} 
+.mapCategory-RetailNavHolder{
+	padding-top:10px;
+	display:none;
+}
+.mapCategory-AviationNavHolder{
+	padding-top:10px;
+	display:none;
+} 
+.mapCategory-MedicalNavHolder{
+	padding-top:10px;
+	display:none;
+}
+.mapCategory-MultiFamilyNavHolder{
+	padding-top:10px;
+	display:none;
+}
+.mapCategory-LandNavHolder{
+	padding-top:10px;
+	display:none;
+}
+
+.backToUSAMapBTN{
+	position: absolute;
+	width:98px;
+	height:66px;
+	background-image: url('../images/backToUSAMap.png');
+	background-repeat: no-repeat;
+	top:0px;
+	left:0px;
+	color:#ffffff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: left;
+	margin-right:10px;
+	padding-left:22px;
+	padding-top:22px;
+}
+.backToUSAMapBTN a{
+	text-decoration: none;
+	color:#ffffff;
+}
+.toNY-BTN{
+	position: absolute;
+	top:0px;
+	left:365px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNY-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toNY-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toCT-BTN{
+	position: absolute;
+	top:0px;
+	left:487px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toCT-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toCT-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toPA-BTN{
+	position: absolute;
+	top:240px;
+	left:200px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toPA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-right:10px;
+}
+.toPA-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+}
+
+.toNY-fromCT-BTN{
+	position: absolute;
+	top:150px;
+	left:100px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNY-fromCT-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-right:10px;
+}
+.toNY-fromCT-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+}
+.toMA-fromCT-BTN{
+	position: absolute;
+	top:10px;
+	left:380px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toMA-fromCT-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toMA-fromCT-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.toNC-fromGA-BTN{
+	position: absolute;
+	top:40px;
+	left:390px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNC-fromGA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toNC-fromGA-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toSC-fromGA-BTN{
+	position: absolute;
+	top:120px;
+	left:510px;
+	width:200px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+.toAL-fromGA-BTN{
+	position: absolute;
+	top:290px;
+	left:50px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.toGA-fromNC-BTN{
+	position: absolute;
+	top:440px;
+	left:250px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toGA-fromNC-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toGA-fromNC-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toVA-fromNC-BTN{
+	position: absolute;
+	top:50px;
+	left:350px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+.toPA-fromNC-BTN{
+	position: absolute;
+	top:50px;
+	left:350px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+.toPA-fromMA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-right:10px;
+}
+.toPA-fromMA-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toSC-fromNC-BTN{
+	position: absolute;
+	top:340px;
+	left:50px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+.toCT-fromMA-BTN{
+	position: absolute;
+	top:350px;
+	left:280px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toCT-fromMA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-right:10px;
+}
+.toCT-fromMA-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+}
+.toNH-fromMA-BTN{
+	position: absolute;
+	top:40px;
+	left:250px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNH-fromMA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toNH-fromMA-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toPA-fromOH-BTN{
+	position: absolute;
+	top:350px;
+	left:580px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toPA-fromOH-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-left:10px;
+}
+.toPA-fromOH-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+}
+.toOH-fromTX-BTN{
+	position: absolute;
+	top:40px;
+	left:380px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toOH-fromTX-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toOH-fromTX-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.toOH-fromPA-BTN{
+	position: absolute;
+	top:350px;
+	left:20px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toOH-fromPA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-right:10px;
+}
+.toOH-fromPA-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+}
+.toNY-fromPA-BTN{
+	position: absolute;
+	top:40px;
+	left:300px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNY-fromPA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toNY-fromPA-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toNJ-fromPA-BTN{
+	position: absolute;
+	top:90px;
+	left:570px;
+	width:85px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNJ-fromPA-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-right:10px;
+}
+.toNJ-fromPA-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:right;
+}
+
+.toPA-fromNY-BTN{
+	position: absolute;
+	top:440px;
+	left:30px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toPA-fromNY-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toPA-fromNY-arrow{
+	position: relative;
+	width:15px;
+	height:9px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.toNJ-fromNY-BTN{
+	position: absolute;
+	top:450px;
+	left:340px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toNJ-fromNY-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toCT-fromNY-BTN{
+	position: absolute;
+	top:340px;
+	left:580px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toCT-fromNY-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+.toMA-fromNY-BTN{
+	position: absolute;
+	top:260px;
+	left:580px;
+	width:100px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toMA-fromNY-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	margin-top:4px;
+}
+
+.toOH-fromIL-BTN{
+	position: absolute;
+	top:140px;
+	left:530px;
+	width:50px;
+	height:40px;
+	text-align: center;
+	color: #ffffff;
+}
+.toOH-fromIL-text{
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
+	height:8px;
+	float:left;
+	margin-right:10px;
+}
+.toOH-fromIL-arrow{
+	position: relative;
+	width:9px;
+	height:15px;
+	margin-left: auto;
+	margin-right: auto;
+	float:right;
+}
+
+.toNY-text a, .toCT-text a, .toPA-text a, .toNY-fromCT-text a, .toMA-fromCT-text a, .toNC-fromGA-text a, .toSC-fromGA-BTN a, .toAL-fromGA-BTN a, .toGA-fromNC-text a, .toSC-fromNC-text a, .toVA-fromNC-text a, .toNH-fromMA-text a, .toCT-fromMA-text a, .toPA-fromOH-text a, .toOH-fromTX-text a, .toOH-fromPA-text a, .toNY-fromPA-text a, .toMA-fromNY-BTN a, .toPA-fromNY-BTN a, .toCT-fromNY-BTN a, .toNJ-fromNY-BTN a, .toPA-fromNC-text a, .toNJ-fromPA-text a, .toOH-fromIL-text a{
+	text-decoration: none;
+	color:#ffffff;
+}
+
+.propTitle h3 a{
+	text-decoration: none;
+	color:#000000;
+}
+
+/* MAP BULLET STYLES */
+
+
+#map a.bullet { 
+	display: none; 
+	position: absolute; 
+	width: 20px; 
+	height: 20px; 
+	text-decoration: none;  
+	z-index: 2; 
+	background-image: url('../images/mapBullet-blue.png'); 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	cursor: pointer;
+}
+#map a.bullet:hover { 
+	background-image: url('../images/mapBullet-yellow.png'); 
+}
+#map a.highlightedBullet { 
+	background-image: url('../images/mapBullet-yellow.png'); 
+}
+
+#bulletHolder-office{
+	display:none;
+	position: relative;
+	width:710px;
+	height:490px;
+}
+
+#bulletHolder-warehouse{
+	display:none;
+	position: relative;
+	width:710px;
+	height:490px;
+}
+
+#bulletHolder-retail{
+	display:none;
+	position: relative;
+	width:710px;
+	height:490px;
+}
+
+#bulletHolder-aviation{
+	display:none;
+	position: relative;
+	width:710px;
+	height:490px;
+}
+
+
+
+#map img.zoomable { }
+#map div.popup{ 
+	display: none; 
+	position: absolute; 
+	padding:2px;  
+	background: #dedede; 
+	z-index: 3; 
+	width:140px;
+}
+.infoImage{
+	position: relative;
+	width:140px;
+	height:80px;
+	background-color: red;
+}
+.infoHolder{
+	position:relative;
+	width:140px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+}
+.propTitle{
+	font-size:12px;
+	font-weight: bold;
+}
+.propTown{
+	font-size:10px;
+	font-weight: normal;
+}
+#map div.popup a.close{ 
+	display: block; 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	color: #666; 
+	text-decoration: none; 
+	height: 122px; 
+	width: 144px;
+}
+
+
+
+
+#returnlink 
+ {bottom: 0px; height: 788px;  padding: 0px; position: absolute; right: 10px; top:-20px; width:1024px;text-indent: -999999px;font-family:Arial, Helvetica, sans-serif;font-size: 10px; color: #666;bottom:20px;}
+ 
+ 
+/*main map box styles*/
+
+.infoHolder{ position:relative;}
+.propTitle h3{margin:0px;padding:0px;text-align: center;font-size:12px;}
+.propTitle {position: relative;}
+.popupcontent {font-family:Arial, Helvetica, sans-serif;font-size: 12px; color: #666; position: relative;text-align: center;}
+.bottomClose{bottom: 0; right: 0; position: absolute; padding: 5px;}
+.bottomCloseUSA{top: 6px; right: 8px; position: absolute; padding: 0px;}
+
+
+
+
+#map div.state-popup{ 
+	display: none; 
+	position: absolute; 
+	padding-top:5px;
+	padding-bottom:5px;  
+	background: #dedede; 
+	z-index: 3; 
+	padding-left:10px;
+	padding-right:30px;
+}
+#map div.state-popup a.close{ 
+	display: block; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 9px; 
+	color: #666; 
+	text-decoration: none; 
+	height: 10px; 
+	width: 10px;
+}
+/* STATE BOX STYLES */
+#state-ct-box{ top: 166px; left: 580px;}
+#state-ga-box{ top: 345px; left: 495px;}
+#state-ma-box{ top: 165px; left: 575px;}
+#state-nj-box{ top: 195px; left: 565px;}
+#state-ny-box{ top: 160px; left: 560px;}
+#state-nc-box{ top: 290px; left: 525px;}
+#state-oh-box{ top: 220px; left: 495px;}
+#state-pa-box{ top: 197px; left: 530px;}
+#state-tx-box{ top: 385px; left: 290px;}
+#state-il-box{ top: 225px; left: 404px;}
+
+#nj-25HanoverRoad-box{ left: 250px; top: 45px;}
+#nj-97MainStreet-box{ left: 250px; top: 65px;}
+#nj-105FieldcrestAvenue-box{ left: 280px; top: 85px;}
+#nj-150AllenRoad-box{ left: 225px; top: 75px;}
+#nj-160LittletonRoad-box{ left: 230px; top: 45px;}
+#nj-161MadisonAvenue-box{ left: 225px; top: 45px;}
+#nj-180RiverRoad-box{ left: 255px; top: 90px;}
+#nj-788MorrisTurnpike-box{ left: 265px; top: 65px;}
+#nj-Bernards78-box{ left: 220px; top: 105px;}
+#nj-LakesideEast-box{ left: 265px; top: 115px;}
+#nj-LakesideWest-box{ left: 275px; top: 125px;}
+
+#nj-1SilverLine-box{ left: 275px; top: 125px;}
+#nj-105SylvaniaPlace-box{ left: 265px; top: 115px;}
+#nj-207PondAvenue-box{ left: 245px; top: 115px;}
+#nj-326North14th-box{ left: 270px; top: 85px;}
+#nj-708Colfax-box{ left: 290px; top: 75px;}
+#nj-1575JerseyAvenue-box{ left: 285px; top: 135px;}
+
+#nj-SouthStreet-box{ left: 225px; top: 45px;}
+
+#nj-17AirportRoad-box{ left: 225px; top: 45px;}
+
+#nj-10JamesStreet-box{ left: 250px; top: 55px;}
+#nj-128ColumbiaTurnpike-box{ left: 260px; top: 65px;}
+#nj-310MadisonAvenue-box{ left: 225px; top: 45px;}
+#nj-77EastNorthfieldRoad-box{ left: 275px; top: 35px;}
+
+
+#ct-30TrefoilDrive-box{ left: 175px; top: 335px;}
+#ct-35CorporateDrive-box{ left: 175px; top: 335px;}
+#ct-55CorporateDrive-box{ left: 175px; top: 335px;}
+#ct-95Glastonbury-box{ left: 260px; top: 165px;}
+#ct-100PearlStreet-box{ left: 250px; top: 175px;}
+#ct-204SpringHillRoad-box{ left: 175px; top: 335px;}
+#ct-OfficesAtGreensFarms-box{ left: 155px; top: 355px;}
+
+#ct-MerrittStation-box{ left: 215px; top: 205px;}
+#ct-Westgate-box{ left: 225px; top: 145px;}
+
+#ct-126MonroeTurnpike-box{ left: 175px; top: 335px;}
+
+#ga-1700Westfork-box{ left: 75px; top: 35px;}
+#ga-1780Westfork-box{ left: 75px; top: 35px;}
+#ga-1800Westfork-box{ left: 75px; top: 35px;}
+
+#nc-2223NortheastCreekParkway-box{ left: 260px; top: 105px;}
+#nc-3500TricenterBlvd-box{ left: 260px; top: 105px;}
+#nc-FMCDialysis-box{ left: 260px; top: 105px;}
+#nc-10000TwinLakes-box{ left: 50px; top: 225px;}
+
+#ma-CurrantRoad-box{ left: 350px; top: 235px;}
+
+#oh-InnovationDrive-box{ left: 70px; top: 155px;}
+
+#tx-LeonDrive-box{ left: 370px; top: 115px;}
+
+#pa-GreenlandVillage-box{ left: 395px; top: 255px;}
+#pa-ParklandView-box{ left: 440px; top: 135px;}
+#pa-MadisonFarms-box{ left: 470px; top: 125px;}
+
+
+#ny-AudubonManor-box{ left: 330px; top: 335px;}
+#ny-ChelseaRidge-box{ left: 320px; top: 275px;}
+#ny-Cortlandt-box{ left: 330px; top: 335px;}
+#ny-HudsonHarbour-box{ left: 320px; top: 255px;}
+#ny-Brooklane-box{ left: 120px; top: 190px;}
+#ny-CandlewyckPark-box{ left: 120px; top: 190px;}
+#ny-GaslightVillage-box{ left: 120px; top: 190px;}
+#ny-LansingWest-box{ left: 120px; top: 190px;}
+#ny-NorthWood-box{ left: 120px; top: 190px;}
+#ny-WarrenWood-box{ left: 120px; top: 190px;}
+#ny-WilberPark-box{ left: 120px; top: 190px;}
+#ny-VillagePark-box{ left: 330px; top: 335px;}
+#ny-WaterviewOnHudson-box{ left: 330px; top: 335px;}
+
+#il-libertyPoint-box{ left: 275px; top: 15px;}
+
+/*links*/
+
+#newJerseyLinks{
+	display: block;
+	padding-bottom: 10px;
+}
+#newYorkLinks{
+	display: none;
+	padding-bottom: 20px;
+}
+#pennsylvaniaLinks{
+	display: none;
+	padding-bottom: 20px;
+}
+#texasLinks{
+	display:none;
+	padding-bottom: 20px;
+}
+
+
+
+
+#mapBox{
+	background-color: #ffffff;
+	width:710px;
+	height:490px;
+	overflow: hidden;
+}
+#map{
+	background-color: #ececec;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

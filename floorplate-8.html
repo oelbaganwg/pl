@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parkway Lofts</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<!-- Styles -->
+	<link type="text/css" href="css/mainStyles.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />	
+	<!-- Scripts -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+	<script type="text/javascript" src="js/jquery-valign.js"></script>
+	<script type="text/javascript" src="js/jquery.preloader.js"></script>
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+	<script type="text/javascript" src="js/modernizr-2.0.6.min.js"></script>
+	<script type="text/javascript" src="js/slides.js"></script>
+	<script type="text/javascript" src="js/baseScripts.js"></script>
+	<script type="text/javascript" src="js/floorplatePenthouse.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			    
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+<div id="theContactHolder">
+	<div class="contactform-frame" style="display:none;">
+		<div id="contactformFrameBorder">
+
+	            	<div id="backToPage">
+	            		<img style="float:right;margin-left:5px;margin-top:4px;" src="images/closeBTN.png" width="10" height="8"/>
+	            		<div style="float:right;margin-top:2px;">BACK TO FORM</div>
+	            		<div class="clearFloat"></div>
+	            	</div>
+	                <div id="popupForm">
+	                	<div id="popupHeadline">STAY CONNECTED</div>
+	                	<form id="register" name="register" method="post">
+	        				<div class="contactRow">
+	        					<div class="form-label">First & Last Name*</div>
+	        					<input id="firstname" name="formdata_name" type="text">
+	        					<div style="clear:both"></div>
+	        				</div>
+	        				
+	                        <div class="contactRow">
+	                        	<div class="form-label">Email Address*</div>
+	                        	<input id="email" name="formdata_email" type="email">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Phone</div>
+	                        	<input id="phone" name="formdata_phone" type="tel">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">How Did You Hear<BR>About Us?</div>
+	                        	<input id="type" name="formdata_residence" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Comments</div>
+	                        	<input id="comments" name="formdata_comments" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	        			
+		        			<div class="required-and-submit clearfix">
+		        			<!-- input fields for google conversions -->
+							<input type="hidden" value="" name="formdata_medium">
+							<input type="hidden" value="" name="formdata_campaign">
+							<input type="hidden" value="" name="formdata_keyword">
+							<input type="hidden" value="" name="formdata_keyword_source">
+							<input type="hidden" value="" name="formdata_keyword_medium">
+							<input type="hidden" value="Contact Page" name="formdata_form_name">
+		        				<div class="requestSubmit" id="formSubmitBTN">SUBMIT</div>
+		        				<div class="required">* Required Field</div>
+		        				<div class="clearFloat"></div>
+		        			</div>
+	                  </form>	
+	                </div>
+	                <div style="clear:both"></div>
+
+		</div>
+	</div>
+</div>
+
+<div id="floorplansHolder">
+	<div id="floorplansLoader">
+		<img src="images/30.gif" alt="fancy_loading" width="64" height="8" />
+	</div>
+	<div id="floorplansInHere">
+	
+	</div>
+</div>
+
+<div id="theHeader">
+	<div id="tracker" style="display:none;"></div>
+	<div id="tracker2" style="display:none;"></div>
+	<div id="navigation">
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="residences.html">RESIDENCES</a>
+				<div class="rolledNavBTN"><a href="residences.html">RESIDENCES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="amenities.html">AMENITIES</a>
+				<div class="rolledNavBTN"><a href="amenities.html">AMENITIES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft selectedNav">
+			<div class="navBTNText">
+				<a href="floorplans-ipad.html">FLOORPLANS</a>
+				<div class="rolledNavBTN"><a href="floorplans-ipad.html">FLOORPLANS</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div id="parkwayLogo">
+			<a href="index.html"><img src="images/parkway-lofts-logo.png" alt="Parkway Lofts" width="140" height="156" /></a>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="contact-us.html">CONTACT US</a>
+				<div class="rolledNavBTN"><a href="contact-us.html">CONTACT US</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="gallery.html">GALLERY</a>
+				<div class="rolledNavBTN"><a href="gallery.html">GALLERY</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="neighborhood.html">NEIGHBORHOOD</a>
+				<div class="rolledNavBTN"><a href="neighborhood.html">NEIGHBORHOOD</a></div>
+			</div>	
+			<div class="navBackOver"></div>
+		</div>	
+	</div>
+	<div id="becomeVipBTN">BECOME A VIP</div>
+	<div class="clearFloat"></div>
+	
+</div>
+
+<div id="homeContent">
+	<div id="floorplateContentHolder">	
+	
+		<div id="floorplateLabelHolder"><div id="floorplateLabel">Penthouse</div></div>
+			
+		<div id="floorplate3Holder" class="floorplateHolder"> 
+		 
+			<div id="theFloorplate"><img src="images/floorplate-penthouse.png" alt="penthouse floorplate" width="688" height="314" /></div>
+			
+			<div id="floorplate3Highlighters">
+				
+				<canvas width="30" height="54" id="residencePent1" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="54" id="residencePent2" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="54" id="residencePent3" class="floorplateHighlights"></canvas>
+				<canvas width="39" height="45" id="residencePent4" class="floorplateHighlights"></canvas>
+				<canvas width="39" height="45" id="residencePent5" class="floorplateHighlights"></canvas>
+				<canvas width="42" height="43" id="residencePent6" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="40" id="residencePent7" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="40" id="residencePent8" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="40" id="residencePent9" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="40" id="residencePent10" class="floorplateHighlights"></canvas>
+				<canvas width="40" height="32" id="residencePent11" class="floorplateHighlights"></canvas>
+				<canvas width="53" height="30" id="residencePent12" class="floorplateHighlights"></canvas>
+				<canvas width="40" height="32" id="residencePent13" class="floorplateHighlights"></canvas>
+				<canvas width="40" height="32" id="residencePent14" class="floorplateHighlights"></canvas>
+				<canvas width="54" height="30" id="residencePent15" class="floorplateHighlights"></canvas>
+				<canvas width="41" height="30" id="residencePent16" class="floorplateHighlights"></canvas>
+				<canvas width="38" height="30" id="residencePent17" class="floorplateHighlights"></canvas>
+				<canvas width="54" height="30" id="residencePent18" class="floorplateHighlights"></canvas>
+				<canvas width="40" height="32" id="residencePent19" class="floorplateHighlights"></canvas>
+				<canvas width="40" height="32" id="residencePent20" class="floorplateHighlights"></canvas>
+				<canvas width="54" height="30" id="residencePent21" class="floorplateHighlights"></canvas>
+				
+				
+				<canvas width="34" height="30" id="residencePent22" class="floorplateHighlights"></canvas>
+				<canvas width="39" height="30" id="residencePent23" class="floorplateHighlights"></canvas>
+				<canvas width="53" height="30" id="residencePent24" class="floorplateHighlights"></canvas>
+				<canvas width="39" height="30" id="residencePent25" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="30" id="residencePent26" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="49" id="residencePent27" class="floorplateHighlights"></canvas>
+				<canvas width="30" height="30" id="residencePent28" class="floorplateHighlights"></canvas>
+				<canvas width="53" height="30" id="residencePent29" class="floorplateHighlights"></canvas>
+				<canvas width="40" height="30" id="residencePent30" class="floorplateHighlights"></canvas>
+				<canvas width="54" height="30" id="residencePent31" class="floorplateHighlights"></canvas>
+				<canvas width="33" height="30" id="residencePent32" class="floorplateHighlights"></canvas>
+				<canvas width="54" height="44" id="residencePent33" class="floorplateHighlights"></canvas>
+				<canvas width="52" height="42" id="residencePent34" class="floorplateHighlights"></canvas>
+				<canvas width="31" height="38" id="residencePent35" class="floorplateHighlights"></canvas>
+				<canvas width="31" height="54" id="residencePent36" class="floorplateHighlights"></canvas>
+				<canvas width="31" height="38" id="residencePent37" class="floorplateHighlights"></canvas>
+				
+			</div>
+			
+    	</div>
+    	
+    	
+        <div id="backToFloorsHeadline">
+        	<a href="floorplans-ipad.html"><img src="images/backToBuilding-penthouse.png" alt="backToBuilding" width="209" height="84" style="right:-3px;" /></a><BR>
+        BACK TO FLOORS</div>
+	</div>
+</div>
+
+<style type="text/css">
+	#residencePent1{left:45px;top:250px;position: absolute;}
+	#residencePent2{left:45px;top:195px;position: absolute;}
+	#residencePent3{left:45px;top:140px;position: absolute;}
+	#residencePent4{left:15px;top:99px;position: absolute;}
+	#residencePent5{left:15px;top:53px;position: absolute;}
+	#residencePent6{left:15px;top:15px;position: absolute;}
+	#residencePent7{left:58px;top:15px;position: absolute;}
+	#residencePent8{left:88px;top:15px;position: absolute;}
+	#residencePent9{left:119px;top:15px;position: absolute;}
+	#residencePent10{left:149px;top:15px;position: absolute;}
+	#residencePent11{left:180px;top:12px;position: absolute;}
+	#residencePent12{left:221px;top:15px;position: absolute;}
+	#residencePent13{left:275px;top:12px;position: absolute;}
+	#residencePent14{left:314px;top:12px;position: absolute;}
+	#residencePent15{left:354px;top:15px;position: absolute;}
+	#residencePent16{left:409px;top:15px;position: absolute;}
+	#residencePent17{left:450px;top:15px;position: absolute;}
+	#residencePent18{left:489px;top:15px;position: absolute;}
+	#residencePent19{left:543px;top:12px;position: absolute;}
+	#residencePent20{left:584px;top:12px;position: absolute;}
+	#residencePent21{left:624px;top:15px;position: absolute;}
+	#residencePent22{left:615px;top:52px;position: absolute;}
+	#residencePent23{left:575px;top:52px;position: absolute;}
+	#residencePent24{left:521px;top:52px;position: absolute;}
+	#residencePent25{left:481px;top:52px;position: absolute;}
+	#residencePent26{left:450px;top:52px;position: absolute;}
+	#residencePent27{left:421px;top:94px;position: absolute;}
+	#residencePent28{left:378px;top:52px;position: absolute;}
+	#residencePent29{left:324px;top:52px;position: absolute;}
+	#residencePent30{left:283px;top:52px;position: absolute;}
+	#residencePent31{left:228px;top:52px;position: absolute;}
+	#residencePent32{left:194px;top:52px;position: absolute;}
+	#residencePent33{left:139px;top:62px;position: absolute;}
+	#residencePent34{left:124px;top:107px;position: absolute;}
+	#residencePent35{left:83px;top:149px;position: absolute;}
+	#residencePent36{left:83px;top:188px;position: absolute;}
+	#residencePent37{left:83px;top:243px;position: absolute;}
+</style>
+
+<div id="theFooter">
+	<div id="footerLeft">5 LAWRENCE STREET | BLOOMFIELD NJ | 07003 | 201.308.8200</div>
+	<div id="footerRight"></div>
+	<div class="clearFloat"></div>
+</div>
+
+</body>
+</html>

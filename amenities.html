@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parkway Lofts</title>
+	<meta name="viewport" content="width=device-width" />
+	<!-- Styles -->
+	<link type="text/css" href="css/mainStyles.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />	
+	<style type="text/css">
+		#section1{height:560px;}
+	</style>
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/jquery-valign.js"></script>
+	<script type="text/javascript" src="js/jquery.preloader.js"></script>
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+	<script type="text/javascript" src="js/baseScripts.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+if( $("#error").html() != "") {
+				$('body').css('overflow', 'hidden');
+				$("#theContactHolder").show();
+		    }
+*/
+		    $('#section1').css('opacity', 0);
+		    $('#section2').css('opacity', 0);
+		    $('#theFooter').css('opacity', 0);
+		    
+		    $('#homeContentHolder > IMG').attr('src', 'images/amenities-top.jpg');
+		    
+		    $('#residences-A > .columnImage > IMG').attr('src', 'images/residences-1a.jpg');
+		    $('#residences-B > .columnImage > IMG').attr('src', 'images/residences-1b.jpg');
+		    $('#residences-C > .columnImage > IMG').attr('src', 'images/residences-1c.jpg');
+		    
+		    $('#residences-2A > .columnImage > IMG').attr('src', 'images/residences-2a.jpg');
+		    $('#column2-2a > IMG').attr('src', 'images/residences-2b1.jpg');
+		    $('#column2-2b > IMG').attr('src', 'images/residences-2b2.jpg');
+		    $('#residences-2C > .columnImage > IMG').attr('src', 'images/residences-2c.jpg');
+		   	
+		   	$('#homeContentHolder > IMG').load(function() {
+    			$('#homeContentHolder > IMG').fadeIn(500, 'easeOutQuad'); 
+			});
+		    
+		    $('#section1').waitForImages(function() {
+    			$('#section1').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#amenities-A').delay(700).fadeIn(500, 'easeOutQuad');
+    			$('#amenities-Top').delay(1000).fadeIn(500, 'easeOutQuad');
+    			$('#amenities-B').delay(1300).fadeIn(500, 'easeOutQuad');
+    			$('#amenities-C').delay(1600).fadeIn(500, 'easeOutQuad'); 
+			});
+			
+		    $('#section2').waitForImages(function() {
+    			$('#section2').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#section2Separator').delay(500).fadeIn(500, 'easeOutQuad');
+    			$('#amenities-2A').delay(700).fadeIn(500, 'easeOutQuad');
+    			$('#amenities-2B').delay(1000).fadeIn(500, 'easeOutQuad');
+    			$('#amenities-2C').delay(1300).fadeIn(500, 'easeOutQuad'); 
+    			$('#theFooter').delay(1500).animate({'opacity': 1}, 500, 'easeOutQuad');
+			});
+			
+		});
+	</script>
+	
+
+</head>
+
+<body>
+
+<div id="theContactHolder" style="display:none;">
+	<div class="contactform-frame">
+		<div id="contactformFrameBorder">
+
+	            	<div id="backToPage">
+	            		<img style="float:right;margin-left:5px;margin-top:4px;" src="images/closeBTN.png" width="10" height="8"/>
+	            		<div style="float:right;margin-top:2px;">BACK TO FORM</div>
+	            		<div class="clearFloat"></div>
+	            	</div>
+	                <div id="popupForm">
+	                	<div id="popupHeadline">STAY CONNECTED</div>
+	                	<form id="register" name="register" method="post">
+	        				<div class="contactRow">
+	        					<div class="form-label">First & Last Name*</div>
+	        					<input id="firstname" name="formdata_name" type="text">
+	        					<div style="clear:both"></div>
+	        				</div>
+	        				
+	                        <div class="contactRow">
+	                        	<div class="form-label">Email Address*</div>
+	                        	<input id="email" name="formdata_email" type="email">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Phone</div>
+	                        	<input id="phone" name="formdata_phone" type="tel">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">How Did You Hear<BR>About Us?</div>
+	                        	<input id="type" name="formdata_residence" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Comments</div>
+	                        	<input id="comments" name="formdata_comments" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	        			
+		        			<div class="required-and-submit clearfix">
+		        			<!-- input fields for google conversions -->
+							<input type="hidden" value="" name="formdata_medium">
+							<input type="hidden" value="" name="formdata_campaign">
+							<input type="hidden" value="" name="formdata_keyword">
+							<input type="hidden" value="" name="formdata_keyword_source">
+							<input type="hidden" value="" name="formdata_keyword_medium">
+							<input type="hidden" value="Contact Page" name="formdata_form_name">
+		        				<div class="requestSubmit" id="formSubmitBTN">SUBMIT</div>
+		        				<div class="required">* Required Field</div>
+		        				<div class="clearFloat"></div>
+		        			</div>
+	                  </form>	
+	                
+	                </div>
+	                <div style="clear:both"></div>
+
+		</div>
+	</div>
+</div>
+
+<div id="theHeader">
+	
+	<div id="navigation">
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="residences.html">RESIDENCES</a>
+				<div class="rolledNavBTN"><a href="residences.html">RESIDENCES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft selectedNav">
+			<div class="navBTNText">
+				<a href="amenities.html">AMENITIES</a>
+				<div class="rolledNavBTN"><a href="amenities.html">AMENITIES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="floorplans.html">FLOORPLANS</a>
+				<div class="rolledNavBTN"><a href="floorplans.html">FLOORPLANS</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div id="parkwayLogo">
+			<a href="index.html"><img src="images/parkway-lofts-logo.png" alt="Parkway Lofts" width="140" height="156" /></a>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="contact-us.html">CONTACT US</a>
+				<div class="rolledNavBTN"><a href="contact-us.html">CONTACT US</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="gallery.html">GALLERY</a>
+				<div class="rolledNavBTN"><a href="gallery.html">GALLERY</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="neighborhood.html">NEIGHBORHOOD</a>
+				<div class="rolledNavBTN"><a href="neighborhood.html">NEIGHBORHOOD</a></div>
+			</div>	
+			<div class="navBackOver"></div>
+		</div>	
+	</div>
+	<div id="becomeVipBTN">BECOME A VIP</div>
+	<div class="clearFloat"></div>
+	
+</div>
+
+<div id="homeContent">
+	<div id="homeContentHolder">		
+		<img src="" alt="amenities-top" width="1480" height="460" style="display:none;" />        
+	</div>
+</div>
+
+<div id="theContents">
+	<div class="sectionHolder" id="section1">
+		<div class="column1 headlineRow">
+			<div class="largeHeadline">DIRECT<BR>ACCESS</div>
+		</div>
+		<div class="column2 headlineRow">
+			Convenience comes standard. Only a two block walk to the NJ Transit Watsessing Station that is only two stops away from Manhattan, and located directly off exit 148 on the GSP, Parkway Lofts is built for your commuter lifestyle.  
+		</div>
+		<div class="column3 headlineRow">
+			<ul>
+				<li>Immediate access to NJ Transit Midtown Direct</li>
+				<li>Immediate Garden Staty Parkway access</li>
+				<li>Views of NYC and the Watchung Mountains</li>
+				<li>Gated Entrance, Doorman/Concierge</li>
+			</ul>
+		</div>
+		<div class="clearFloat"></div>
+		<div class="column1" id="amenities-A">
+			<div class="columnImage"><img src="images/amenities-1.jpg" alt="residences-1" width="320" height="430" /></div>
+		</div>
+		<div class="column2colspan2" id="amenities-Top"><img src="images/amenities-1top.jpg" alt="amenities-1top" width="650" height="210" /></div>
+		<div class="column2" id="amenities-B">
+			<div class="columnImage"><img src="images/amenities-1b.jpg" alt="amenities-1b" width="320" height="210" /></div>
+		</div>
+		<div class="column3" id="amenities-C">
+			<div class="columnImage"><img src="images/amenities-1c.jpg" alt="amenities-1c" width="320" height="210" /></div>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+	<div class="sectionSeparator" id="section2Separator"></div>
+	<div class="sectionHolder" id="section2">
+		<div class="column1 headlineRow">
+			<div class="largeHeadline">MODERN<BR>AMENITIES</div>
+		</div>
+		<div class="column2 headlineRow">
+			Lifestyle amenities? We have quite a few…a two level state of the art fitness center, a 20 seat private screening theater, a billiard and private party room, dedicated covered parking and a dog-run for our four legged friends.  
+		</div>
+		<div class="column3 headlineRow">
+			<ul>
+				<li>Two level fitness center</li>
+				<li>20-seat screening theater</li>
+				<li>Billiard/party room</li>
+				<li>Dog-run</li>
+			</ul>
+		</div>
+		<div class="clearFloat"></div>
+		<div class="column1" id="amenities-2A">
+			<div class="columnImage"><img src="images/amenities-2a.jpg" alt="amenities-2a" width="320" height="330" /></div>
+		</div>
+		<div class="column2" id="amenities-2B">
+			<div class="columnImage"><img src="images/amenities-2b.jpg" alt="amenities-2b" width="320" height="330" /></div>
+		</div>
+		<div class="column3" id="amenities-2C">
+			<div class="columnImage"><img src="images/amenities-2c.jpg" alt="amenities-2c" width="320" height="330" /></div>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+</div>
+
+<div id="theFooter">
+	<div id="footerLeft">5 LAWRENCE STREET | BLOOMFIELD NJ | 07003 | 201.308.8200</div>
+	<div id="footerRight"></div>
+	<div class="clearFloat"></div>
+</div>
+
+</body>
+</html>

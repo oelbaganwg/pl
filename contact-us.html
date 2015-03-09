@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parkway Lofts</title>
+	<meta name="viewport" content="width=device-width" />
+	<!-- Styles -->
+	<link type="text/css" href="css/mainStyles.css" rel="stylesheet" />
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
+	<script type="text/javascript" src="js/jquery-valign.js"></script>
+	<script type="text/javascript" src="js/baseScripts.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		    $('#section1').css('opacity', 0);
+		    $('#theFooter').css('opacity', 0);
+		    
+		    $('#contactImage').attr('src', 'images/contact-top.jpg');
+		    
+		    $('#contactImage').load(function() {
+    			$('#contactImage').fadeIn(500, 'easeOutQuad'); 
+    			$('#getDirectionsBTN-text').fadeIn(500, 'easeOutQuad'); 
+    			$('#directionsArrow').fadeIn(500, 'easeOutQuad'); 
+    			$('#section1').delay(500).animate({'opacity': 1}, 500, 'easeOutQuad');
+    			$('#theFooter').delay(800).animate({'opacity': 1}, 500, 'easeOutQuad');
+			});
+			
+		});
+	</script>
+	
+</head>
+
+<body>
+
+<div id="theDirectionsHolder">
+	<div class="form-frame">
+		<div id="formFrameBorder">
+    		<div id="slider">
+	        	
+	        	<div id="slide2">
+	            	<div id="backToForm">
+	            		<img style="float:right;margin-left:5px;margin-top:4px;" src="images/closeBTN.png" width="10" height="8"/>
+	            		<div style="float:right;margin-top:2px;">BACK TO FORM</div>
+	            		<div class="clearFloat"></div>
+	            	</div>
+	                <img src="images/map.jpg" width="430" height="280" id="theMap" /><br />
+	                <div id="directionButtons">
+	                	<div class="directionButton selected" id="fromSouth"></div>
+	                	<div class="directionButton" id="fromNorth"></div>
+	                	<div style="clear:both"></div>
+	                </div>
+	                <div style="display:none" id="preloader">
+	                	<img src="img/fromNorth-selected.png" /><img src="img/fromSouth-unselected.png" />
+	                </div>
+	                <div id="directionsSlider">
+	                	<div class="directions">
+		                	<ul id="directionsSouth">
+		                	 	<li>Follow Garden State Parkway South </li>
+								<li>Take exit 147 to merge onto Parkway Drive </li>
+								<li>Turn left onto North Walnut Street </li>
+								<li>Turn left to stay on North Walnut Street </li>
+								<li>Slight right onto Lawrence Street </li>
+								<li>Parkway Lofts will be on your right</li>
+								<li>5 Lawrence Street, Bloomfield, NJ 07003</li>
+		                	</ul>
+	                	</div>
+	                	<div class="directions">
+	                	 	<ul id="directionsNorth">
+		                		<li>Follow Garden State Parkway North </li>
+								<li>Take exit 148 to merge onto John F Kennedy Drive North</li>
+								<li>Sharp left onto John F Kennedy Drive South </li>
+								<li>Take second left onto Dodd Street </li>
+								<li>Turn right onto Lawrence Street </li>
+								<li>Parkway Lofts will be on your right</li>
+								<li>5 Lawrence Street, Bloomfield, NJ 07003</li>
+							</ul>
+						</div>
+						<div style="clear:both"></div>
+					</div>
+	                <div style="clear:both"></div>
+                </div>
+        	</div>
+		</div>
+	</div>
+</div>
+
+<div id="theHeader">
+	
+	<div id="navigation">
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="residences.html">RESIDENCES</a>
+				<div class="rolledNavBTN"><a href="residences.html">RESIDENCES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="amenities.html">AMENITIES</a>
+				<div class="rolledNavBTN"><a href="amenities.html">AMENITIES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="floorplans.html">FLOORPLANS</a>
+				<div class="rolledNavBTN"><a href="floorplans.html">FLOORPLANS</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div id="parkwayLogo">
+			<a href="index.html"><img src="images/parkway-lofts-logo.png" alt="Parkway Lofts" width="140" height="156" /></a>
+		</div>
+		<div class="navBTN navRight selectedNav">
+			<div class="navBTNText">
+				<a href="contact-us.html">CONTACT US</a>
+				<div class="rolledNavBTN"><a href="contact-us.html">CONTACT US</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="gallery.html">GALLERY</a>
+				<div class="rolledNavBTN"><a href="gallery.html">GALLERY</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="neighborhood.html">NEIGHBORHOOD</a>
+				<div class="rolledNavBTN"><a href="neighborhood.html">NEIGHBORHOOD</a></div>
+			</div>	
+			<div class="navBackOver"></div>
+		</div>	
+	</div>
+	<div id="becomeVipBTN">BECOME A VIP</div>
+	<div class="clearFloat"></div>
+	
+</div>
+
+<div id="homeContent">
+	<div id="homeContentHolder">
+		<div id="directionBTNholder">
+			<div id="getDirectionsBTN">
+				<div id="getDirectionsBTN-text" style="display:none;" >GET DIRECTIONS</div>
+				<div id="getDirectionsBTN-arrow"><img src="images/directionsArrow.png" alt="directionsArrow" id="directionsArrow" style="display:none;" width="33" height="27" /></div>
+			</div>
+		</div>		
+		<img src="" alt="contact" id="contactImage" width="1480" height="460" style="display:none;" />     
+	</div>
+</div>
+
+<div id="theContents">
+	<div class="sectionHolder" id="section1">
+		<div class="column1">
+			<div class="largeHeadline">STAY<BR>CONNECTED</div>
+		</div>
+		<div class="column2">
+			Our experienced information and leasing representatives are available to answer any questions you may have. Email us at <a href="mailto:info@ParkwayLofts.com">info@ParkwayLofts.com</a> or call today to schedule your appointment. 
+		</div>
+		<div class="column3">
+						<form id="register" name="register" method="post">
+	        				<div class="contactRow">
+	        					<div class="form-label">First & Last Name*</div>
+	        					<input id="firstname" name="formdata_name" type="text">
+	        					<div style="clear:both"></div>
+	        				</div>
+	        				
+	                        <div class="contactRow">
+	                        	<div class="form-label">Email Address*</div>
+	                        	<input id="email" name="formdata_email" type="email">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Phone</div>
+	                        	<input id="phone" name="formdata_phone" type="tel">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">How Did You Hear<BR>About Us?</div>
+	                        	<input id="type" name="formdata_residence" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Comments</div>
+	                        	<input id="comments" name="formdata_comments" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	        			
+		        			<div class="required-and-submit clearfix">
+		        			<!-- input fields for google conversions -->
+							<input type="hidden" value="" name="formdata_medium">
+							<input type="hidden" value="" name="formdata_campaign">
+							<input type="hidden" value="" name="formdata_keyword">
+							<input type="hidden" value="" name="formdata_keyword_source">
+							<input type="hidden" value="" name="formdata_keyword_medium">
+							<input type="hidden" value="Contact Page" name="formdata_form_name">
+		        				<div class="requestSubmit" id="formSubmitBTN">SUBMIT</div>
+		        				<div class="required">* Required Field</div>
+		        			</div>
+	                  </form>	
+	                  				
+				
+		</div>
+		<div class="clearFloat"></div>
+		
+	</div>
+</div>
+
+<div id="theFooter">
+	<div id="footerLeft">5 LAWRENCE STREET | BLOOMFIELD NJ | 07003 | 201.308.8200</div>
+	<div id="footerRight"></div>
+	<div class="clearFloat"></div>
+</div>
+
+</body>
+</html>

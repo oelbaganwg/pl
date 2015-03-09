@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Parkway Lofts</title>
+	<meta name="viewport" content="width=device-width" />
+	<!-- Styles -->
+	<link type="text/css" href="css/mainStyles.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />	
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/jquery-valign.js"></script>
+	<script type="text/javascript" src="js/jquery.preloader.js"></script>
+	<script type="text/javascript" src="js/baseScripts.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".homeCell").preloader();
+		});
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			$('#gallery-top1 > a > IMG').attr('src', 'images/gallery-1a.jpg');
+			$('#gallery-top2-a > a > IMG').attr('src', 'images/gallery-1b.jpg');
+			$('#gallery-row1-a > a > IMG').attr('src', 'images/gallery-2a.jpg');
+			$('#gallery-row2-just1 > a > IMG').attr('src', 'images/gallery-2b.jpg');
+			$('#gallery-top2-b > a > IMG').attr('src', 'images/gallery-2c.jpg');
+			$('#gallery-row2-a > a > IMG').attr('src', 'images/gallery-2a-2.jpg');
+			$('#gallery-row3-just2 > a > IMG').attr('src', 'images/gallery-3.jpg');
+			$('#gallery-row3-a > a > IMG').attr('src', 'images/gallery-2a-3.jpg');
+			$('#gallery-row4-col2-a > a > IMG').attr('src', 'images/gallery-4a.jpg');
+			$('#gallery-row4-col3-a > a > IMG').attr('src', 'images/gallery-5a.jpg');
+			$('#gallery-row4-a > a > IMG').attr('src', 'images/gallery-2a-4.jpg');
+			$('#gallery-row4-col2-b > a > IMG').attr('src', 'images/gallery-4b.jpg');
+			$('#gallery-row4-col3-b > a > IMG').attr('src', 'images/gallery-5b.jpg');
+			$('#gallery-row4-col3-c > a > IMG').attr('src', 'images/gallery-5c.jpg');
+			
+			/*
+if( $("#error").html() != "") {
+				$('body').css('overflow', 'hidden');
+				$("#theContactHolder").show();
+		    }
+*/
+		});
+	</script>
+	
+	
+</head>
+
+<body>
+
+<div id="theContactHolder" style="display:none;">
+	<div class="contactform-frame">
+		<div id="contactformFrameBorder">
+
+	            	<div id="backToPage">
+	            		<img style="float:right;margin-left:5px;margin-top:4px;" src="images/closeBTN.png" width="10" height="8"/>
+	            		<div style="float:right;margin-top:2px;">BACK TO FORM</div>
+	            		<div class="clearFloat"></div>
+	            	</div>
+	                <div id="popupForm">
+	                	<div id="popupHeadline">STAY CONNECTED</div>
+	                	<form id="register" name="register" method="post">
+	        				<div class="contactRow">
+	        					<div class="form-label">First & Last Name*</div>
+	        					<input id="firstname" name="formdata_name" type="text">
+	        					<div style="clear:both"></div>
+	        				</div>
+	        				
+	                        <div class="contactRow">
+	                        	<div class="form-label">Email Address*</div>
+	                        	<input id="email" name="formdata_email" type="email">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Phone</div>
+	                        	<input id="phone" name="formdata_phone" type="tel">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">How Did You Hear<BR>About Us?</div>
+	                        	<input id="type" name="formdata_residence" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	                        <div class="contactRow">
+	                        	<div class="form-label">Comments</div>
+	                        	<input id="comments" name="formdata_comments" type="text">
+	                        	<div style="clear:both"></div>
+	                        </div>
+	        			
+		        			<div class="required-and-submit clearfix">
+		        			<!-- input fields for google conversions -->
+							<input type="hidden" value="" name="formdata_medium">
+							<input type="hidden" value="" name="formdata_campaign">
+							<input type="hidden" value="" name="formdata_keyword">
+							<input type="hidden" value="" name="formdata_keyword_source">
+							<input type="hidden" value="" name="formdata_keyword_medium">
+							<input type="hidden" value="Contact Page" name="formdata_form_name">
+		        				<div class="requestSubmit" id="formSubmitBTN">SUBMIT</div>
+		        				<div class="required">* Required Field</div>
+		        				<div class="clearFloat"></div>
+		        			</div>
+	                  </form>	
+	                </div>
+	                <div style="clear:both"></div>
+
+		</div>
+	</div>
+</div>
+
+<div id="theHeader">
+	
+	<div id="navigation">
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="residences.html">RESIDENCES</a>
+				<div class="rolledNavBTN"><a href="residences.html">RESIDENCES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="amenities.html">AMENITIES</a>
+				<div class="rolledNavBTN"><a href="amenities.html">AMENITIES</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navLeft unselectedNav">
+			<div class="navBTNText">
+				<a href="floorplans.html">FLOORPLANS</a>
+				<div class="rolledNavBTN"><a href="floorplans.html">FLOORPLANS</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div id="parkwayLogo">
+			<a href="index.html"><img src="images/parkway-lofts-logo.png" alt="Parkway Lofts" width="140" height="156" /></a>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="contact-us.html">CONTACT US</a>
+				<div class="rolledNavBTN"><a href="contact-us.html">CONTACT US</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight selectedNav">
+			<div class="navBTNText">
+				<a href="gallery.html">GALLERY</a>
+				<div class="rolledNavBTN"><a href="gallery.html">GALLERY</a></div>
+			</div>
+			<div class="navBackOver"></div>
+		</div>
+		<div class="navBTN navRight unselectedNav">
+			<div class="navBTNText">
+				<a href="neighborhood.html">NEIGHBORHOOD</a>
+				<div class="rolledNavBTN"><a href="neighborhood.html">NEIGHBORHOOD</a></div>
+			</div>	
+			<div class="navBackOver"></div>
+		</div>	
+	</div>
+	<div id="becomeVipBTN">BECOME A VIP</div>
+	<div class="clearFloat"></div>
+	
+</div>
+
+<div id="theContents">
+	<div class="sectionHolder">
+		
+		<div id="gallery-top1" class="homeCell"><a href="images/full-1a.jpg" class="fancybox"><img src="" alt="gallery-1a" width="660" height="220" /></a></div>
+		<div id="gallery-top2">
+			<div id="gallery-top2-a" class="homeCell"><a href="images/full-1b.jpg" class="fancybox"><img src="" alt="gallery-1b" width="320" height="330" /></a></div>
+			<div id="gallery-top2-b" class="homeCell"><a href="images/full-2c.jpg" class="fancybox"><img src="" alt="gallery-2c" width="320" height="260" /></a></div>
+		</div>
+		<div id="gallery-row1">
+			<div id="gallery-row1-a" class="homeCell"><a href="images/full-2a.jpg" class="fancybox"><img src="" alt="gallery-2a" width="320" height="230" /></a></div>
+			<div id="gallery-row2-a" class="homeCell"><a href="images/full-2a-2.jpg" class="fancybox"><img src="" alt="gallery-2a-2" width="320" height="460" /></a></div>
+			<div id="gallery-row3-a" class="homeCell"><a href="images/full-2a-3.jpg" class="fancybox"><img src="" alt="gallery-2a-3" width="320" height="340" /></a></div>
+			<div id="gallery-row4-a" class="homeCell"><a href="images/full-2a-4.jpg" class="fancybox"><img src="" alt="gallery-2a-4" width="320" height="390" /></a></div>
+		</div>
+		<div id="gallery-row2-just1" class="homeCell"><a href="images/full-2b.jpg" class="fancybox"><img src="" alt="gallery-2b" width="320" height="370" /></a></div>
+		<div id="gallery-row3-just2" class="homeCell"><a href="images/full-3.jpg" class="fancybox"><img src="" alt="gallery-3" width="660" height="235" /></a></div>
+		<div id="gallery-row4-col2">
+			<div id="gallery-row4-col2-a" class="homeCell"><a href="images/full-4a.jpg" class="fancybox"><img src="" alt="gallery-4a" width="320" height="270" /></a></div>
+			<div id="gallery-row4-col2-b" class="homeCell"><a href="images/full-4b.jpg" class="fancybox"><img src="" alt="gallery-4b" width="320" height="460" /></a></div>
+		</div>
+		<div id="gallery-row4-col3">
+			<div id="gallery-row4-col3-a" class="homeCell"><a href="images/full-5a.jpg" class="fancybox"><img src="" alt="gallery-5a" width="320" height="325" /></a></div>
+			<div id="gallery-row4-col3-b" class="homeCell"><a href="images/full-5b.jpg" class="fancybox"><img src="" alt="gallery-5b" width="320" height="265" /></a></div>
+			<div id="gallery-row4-col3-c" class="homeCell"><a href="images/full-5c.jpg" class="fancybox"><img src="" alt="gallery-5c" width="320" height="210" /></a></div>
+		</div>
+		<div class="clearFloat"></div>
+	</div>
+</div>
+
+<div id="theFooter">
+	<div id="footerLeft">5 LAWRENCE STREET | BLOOMFIELD NJ | 07003 | 201.308.8200</div>
+	<div id="footerRight"></div>
+	<div class="clearFloat"></div>
+</div>
+
+</body>
+</html>

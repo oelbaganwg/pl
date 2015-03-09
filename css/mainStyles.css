@@ -1,0 +1,1204 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'gotham_htfbold';
+    src: url('gothht01-webfont.eot');
+    src: url('gothht01-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothht01-webfont.woff') format('woff'),
+         url('gothht01-webfont.ttf') format('truetype'),
+         url('gothht01-webfont.svg#gotham_htfbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_htfbook';
+    src: url('gothhtfb-webfont.eot');
+    src: url('gothhtfb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gothhtfb-webfont.woff') format('woff'),
+         url('gothhtfb-webfont.ttf') format('truetype'),
+         url('gothhtfb-webfont.svg#gotham_htfbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#ffffff;	
+	font-family: Arial, helvetica, sans-serif;
+	position: relative;
+	min-width:1020px;
+}
+#everything{
+	position:absolute;
+	width:100%;
+	height:100%;	
+}
+IMG{border:0px;}
+a{color:#0a2240;text-decoration: none;}
+a:hover{color:#000000}
+*{position:relative;}
+.clearFloat{clear:both;}
+.bottomSpacer{
+	position: relative;
+	padding-bottom:1100px;
+}
+
+/* HEADER STYLES */
+#theHeader{
+	width:980px;
+	height:156px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#navigation{
+	width:100%;
+}
+#parkwayLogo{
+	width:140px;
+	height:156px;
+	position: absolute;
+	margin-left:420px;
+}
+.navBTN{
+	font-family: 'gotham_htfbook';
+	font-size:15px;
+	margin-bottom:5px;
+	margin-top:105px;
+}
+.navBTNText{
+	position: relative;
+	z-index:1;
+	height:18px;
+	overflow:hidden;
+}
+.unselectedNav .navBackOver{
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background-color: #042859;
+	top:-5px;
+	left:-10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	opacity:0;
+}
+.selectedNav .navBackOver{
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background-color: #042859;
+	top:-5px;
+	left:-10px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.navLeft{
+	float:left;
+	margin-right:25px;
+}
+.navRight{
+	float:right;
+	margin-left:25px;
+}
+.selectedNav a{
+	color:#90d307;
+	text-decoration:none;
+	top:-26px;
+}
+.unselectedNav a{
+	color:#042859;
+	text-decoration:none;
+}
+.unselectedNav a:hover{
+	/*color:#90d307;*/
+}
+#becomeVipBTN{
+	position: absolute;
+	top:0px;
+	right:0px;
+	background-color:#042859;
+	width:150px;
+	font-family: 'gotham_htfbook';
+	font-size:14px;
+	color:#ffffff;
+	text-align:center;
+	padding-top:8px;
+	padding-bottom:8px;
+	cursor:pointer;
+}
+.rolledNavBTN{
+	padding-top:10px;
+}
+.rolledNavBTN a{color:#ffffff;}
+.rolledNavBTN a:hover{color:#ffffff;}
+
+
+
+
+
+#wrapper{
+    max-width: 60em; /* 960 px */
+    margin: 0 auto;
+}
+#list{
+    width: 103.125%; /* 990px */
+    overflow: hidden;
+    margin-left: -1.562%; /* 15px */
+    margin-bottom: -1.875em; /* 30px */
+}
+.item{
+    width: 30.303%; /* 300px */
+    float: left;
+    margin: 0 1.515% 1.875em; /* 15px 30px */
+}
+
+
+
+
+#homeContent {
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1000px;
+    position: relative;
+    width: 100%;
+    padding-bottom:50px;
+    overflow: hidden;
+}
+#homeContentHolder {
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 1480px;
+}
+#directionBTNholder{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+/* CONTENT STYLES */
+#theContents{
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:70px;
+}
+#topVideoHolder{
+	width:980px;
+	height:460px;
+	padding-bottom:45px;
+}
+#topVideoHolder{
+	width:980px;
+	height:460px;
+	position: relative;
+	top:0px;
+	left:0px;
+	z-index:1;
+}
+#getDirectionsBTN{
+	position: absolute;
+	width:230px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:20px;
+	background-color:#ffffff;
+	top:100px;
+	left:100px;
+	z-index:10;
+	cursor: pointer;
+}
+#getDirectionsBTN-text{
+	font-family: 'gotham_htfbold';
+	font-size:18px;
+	color:#042859;
+}
+
+#getDirectionsBTN-arrow{
+	position: absolute;
+	right:18px;
+	top:18px;
+	width:33px;
+	height:27px;
+}
+.sectionHolder{
+	width:100%;
+	color:#042859;
+	font-size:14px;
+	line-height:21px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.headlineRow{
+	height:125px;
+}
+.column1{
+	float:left;
+	width:310px;
+	margin-right:25px;
+}
+.column2{
+	float:left;
+	width:310px;
+	margin-right:25px;
+}
+.column3{
+	float:right;
+	width:310px;
+}
+#residences-A{
+	height:330px;
+	overflow: hidden;
+	display: none;
+}
+#residences-B{
+	height:330px;
+	overflow: hidden;
+	display: none;
+}
+#residences-C{
+	height:330px;
+	overflow: hidden;
+	display: none;
+}
+#residences-2A{
+	height:430px;
+	overflow: hidden;
+	display: none;
+}
+#residences-2C{
+	height:430px;
+	overflow: hidden;
+	display: none;
+}
+#resRow2Cell2 > #column2-2a{
+	width:310px;
+	height:220px;
+	overflow: hidden;
+	display: none;
+}
+#resRow2Cell2 > #column2-2b{
+	width:310px;
+	height:185px;
+	overflow: hidden;
+	display: none;
+}
+.column2colspan2{
+	padding-bottom:25px;
+}
+#section2Separator{display:none;}
+#amenities-A{
+	height:430px;
+	overflow: hidden;
+	display: none;
+}
+#amenities-2A{
+	height:330px;
+	overflow: hidden;
+	display: none;
+}
+#amenities-2B{
+	height:330px;
+	overflow: hidden;
+	display: none;
+}
+#amenities-2C{
+	height:330px;
+	overflow: hidden;
+	display: none;
+}
+#amenities-Top{
+	height:210px;
+	overflow: hidden;
+	float:right;
+	width:645px;
+}
+#amenities-B{
+	height:195px;
+	overflow: hidden;
+	display: none;
+}
+#amenities-C{
+	height:195px;
+	overflow: hidden;
+	display: none;
+}
+#neighborhoodIMG-Top{
+	height:220px;
+	overflow: hidden;
+	float:left;
+	width:645px;
+	display: none;
+}
+#neighborhoodIMG-D{
+	height:430px;
+	overflow: hidden;
+	display: none;
+}
+#neighborhoodIMG-B{
+	height:185px;
+	overflow: hidden;
+	display: none;
+}
+#neighborhoodIMG-C{
+	height:185px;
+	overflow: hidden;
+	display: none;
+}
+#neighborhood-map{
+	float:right;
+	height:620px;
+	overflow: hidden;
+	width:645px;
+}
+#viewBTNs{
+	position: absolute;
+	bottom:-30px;
+	right:250px;
+}
+.viewBTN{
+	float:left;
+	font-family: 'gotham_htfbook';
+    font-size: 16px;
+    color: #90D307;
+    cursor: pointer;
+}
+#viewSeparator{
+	margin-left:10px;
+	margin-right:10px;
+	color: #90D307;
+}
+.viewBTNSelected{
+	color: #042859;
+}
+.viewBTNUnselected{
+	color: #90D307;
+}
+.viewBTNUnselected:hover{
+	color: #042859;
+}
+#viewEast{position: absolute;}
+#viewWest{display:none; position: absolute;}
+
+.home-tag{pointer-events:none;}
+#home-row1{
+	float:left;
+	width:310px;
+}
+#home-top{
+	float:right;
+	width:645px;
+	height:220px;
+	overflow: hidden;
+	margin-bottom:25px;
+}
+#home-row2{
+	float:left;
+	width:310px;
+	margin-left:25px;
+}
+#home-row3{
+	float:right;
+	width:310px;
+}
+#home-row1-a{
+	width:310px;
+	height:380px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#home-row1-b{
+	width:310px;
+	height:210px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#home-row1-c{
+	width:310px;
+	height:290px;
+	overflow:hidden;
+}
+
+#home-row2-a{
+	width:310px;
+	height:210px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#home-row2-b{
+	width:310px;
+	height:360px;
+	overflow:hidden;
+}
+
+#home-row3-a{
+	width:310px;
+	height:360px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#home-row3-b{
+	width:310px;
+	height:290px;
+	overflow:hidden;
+}
+
+.home-tag{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:10;
+	background-image: url('../images/tagBack.png');
+	/* display: none; */
+}
+.home-cell-image{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+
+
+#container{
+	max-width:1480px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.item { width: 30%; background-color: #dedede; overflow: hidden;margin-bottom:12px; }
+.item.w2 { width: 50%; background-color:red; }
+
+
+#gallery-top1{
+	float:left;
+	width:645px;
+	height:220px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-top2{
+	float:right;
+	width:310px;
+}
+#gallery-top2-a{
+	width:310px;
+	height:330px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-top2-b{
+	width:310px;
+	height:260px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+
+#gallery-row1{
+	float:left;
+	width:310px;
+}
+#gallery-row1-a{
+	width:310px;
+	height:230px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-row2-a{
+	width:310px;
+	height:460px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-row3-a{
+	width:310px;
+	height:340px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-row4-a{
+	width:310px;
+	height:390px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+
+
+#gallery-row2-just1{
+	float:left;
+	width:310px;
+	height:370px;
+	overflow:hidden;
+	margin-bottom:25px;
+	margin-left:25px;
+}
+#gallery-row3-just2{
+	float:right;
+	width:645px;
+	height:235px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+
+
+#gallery-row4-col2{
+	float:left;
+	width:310px;
+	margin-left:25px;
+}
+#gallery-row4-col2-a{
+	width:310px;
+	height:270px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-row4-col2-b{
+	width:310px;
+	height:460px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+
+#gallery-row4-col3{
+	float:right;
+	width:310px;
+}
+#gallery-row4-col3-a{
+	width:310px;
+	height:325px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-row4-col3-b{
+	width:310px;
+	height:265px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#gallery-row4-col3-c{
+	width:310px;
+	height:210px;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+
+
+
+
+.largeHeadline{
+	font-family: 'gotham_htfbook';
+	font-size:42px;
+	line-height:42px;
+	color:#042859;
+}
+UL{
+	margin:0px;
+	padding:0px;
+	margin-left:14px;
+}
+LI{
+	margin:0px;
+	padding:0px;
+	padding-bottom:5px;
+}
+.sectionSeparator{
+	display:none;
+	width:980px;
+	height:2px;
+	margin-top:70px;
+	margin-bottom:70px;
+	background-color:#90D307;
+}
+#resRow2Cell2{
+	height:430px;
+}
+#column2-2b{
+	position: absolute;
+	bottom:0px;
+	width:320px;
+	height:190px;
+}
+
+.preloader {   
+    background:url(../images/89.gif) center center no-repeat #ffffff;   
+    display:inline-block;    
+}  
+
+
+
+
+/* START FLOORPLANS STYLES */
+#residenceBuildingSelector{
+	position: relative;
+	width:980px;
+	height:460px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#residenceBuildingFloors{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:460px;
+	z-index: 100;
+	overflow: hidden;
+}
+#rotatingBuilding{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:460px;
+	z-index: 101;
+	overflow: hidden;
+}
+#residenceBuildingNavigation{
+	position: absolute;
+	top:140px;
+	left:40px;
+	width:120px;
+	height:150px;
+	z-index: 1000;
+}
+#rotatingBuildingNavs{
+	position: absolute;
+	width:100%;
+	z-index:110;
+	top:210px;
+	height:35px;
+}
+#rotatingBuildingNav-left{
+	position: absolute;
+	width:21px;
+	height:35px;
+	left:225px;
+	z-index:110;
+	cursor: pointer;
+}
+#rotatingBuildingNav-right{
+	position: absolute;
+	width:21px;
+	height:35px;
+	right:225px;
+	z-index:110;
+	cursor:pointer;
+}
+.floorplans-floorSelector{
+	font-family: 'gotham_htfbook';
+    font-size: 15px;
+	line-height: 21px;
+}
+.fpUnselected a{
+	text-decoration: none;
+	color:#ffffff;
+}
+.fpUnselected a:hover{
+	text-decoration: none;
+	color:#90D307;
+}
+.fpSelected a{
+	text-decoration: none;
+	color:#90D307;
+}
+#selectAFloorHeadline{
+	font-size:15px;
+	color:#ffffff;
+	position: absolute;
+	bottom:20px;
+	right:250px;
+	z-index:111;
+}
+.floorplansEntryInformation{
+	float:left;
+	width:480px;
+	height:440px;
+}
+.floorplansImage{
+	float:right;
+	width:500px;
+	height:440px;
+}
+.floorplansEntryHeadline{
+	font-family: 'gotham_htfbook';
+    font-size: 48px;
+	line-height: 50px;
+	padding-bottom:20px;
+}
+.floorplansEntryBottomText{
+	position: absolute;
+	bottom:0px;
+}
+.floorplansEntryLinkIcon{
+	width:19px;
+	height:23px;
+	float:left;
+}
+.floorplansEntryLinkText{
+	width:400px;
+	float:left;
+	margin-left:10px;
+}
+.floorplansInformation{
+	font-family: 'gotham_htfbook';
+	padding-bottom:20px;
+}
+.floorplansBuildingFeaturesHeadline{
+	font-family: 'gotham_htfbook';
+    font-size: 18px;
+    padding-bottom:10px;
+}
+.floorplansFeauresCol{
+	float:left;
+	width:220px;
+	margin-right:20px;
+}
+.floorplansFeauresCol li{
+	line-height:18px;
+}
+
+#floorplansHolder{
+	position: fixed;
+	width:100%;
+	height:100%;
+	z-index: 11111111;
+	background-image:url('../images/navBack.png');
+	display: none;
+	cursor: pointer;
+}
+#floorplansLoader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1104;
+}
+#floorplansInHere{
+	display:none;
+	width:100%;
+	height:100%;
+}
+.viewport { 
+	width: 100%; 
+	height: 100%; 
+	margin: 0px; 
+	overflow: hidden; /*keep map contents from spilling over if JS is disabled*/ 
+	position: absolute;
+	z-index:10;
+	background-color: #ffffff;
+} 
+#movingViewportImage{
+	position:relative;
+	width:3000px;
+	height:2000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#mouseTip {
+	position: fixed; /** depends on how it handles the e.pageX and e.pageY **/
+	padding:5px;
+	border:1px solid #cccccc;
+	background-color:#ffffff;
+	z-index: 10000;
+	font-size: 10px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	display: none;
+}
+#zoomerLegend{
+	position: absolute;
+	top:10px;
+	right:10px;
+	width:300px;
+	height:20px;
+	z-index:100;
+	padding:10px;
+	background-color:#ffffff;
+}
+.zoom{
+	float:left;
+	
+}
+#zoomClicker{
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index:1;
+}
+#viewportHolder{
+	position: absolute;
+	width:100%;
+	height:100%;
+	z-index:10;
+}
+.zoom{
+	font-family: 'gotham_htfbook';
+	font-size:12px;
+}
+
+
+
+
+
+
+#mapBox{
+	width:645px;
+	height:620px;
+	background-image: url('../images/parkwayMap-back.png');
+	background-repeat: no-repeat;
+}
+.mapItem{
+	display: none;
+	position: absolute;
+	cursor: pointer;
+}
+.mapItemUnselected{
+	background-color:#9fcf67;
+}
+.mapItemSelected{
+	background-color:#003468;
+}
+.mapItemTitle{
+	font-family: 'gotham_htfbook';
+	font-size:10px;
+	line-height:10px;
+	float:left;
+	color:#ffffff;
+	padding-top:2px;
+	padding-bottom:2px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.arrowOnLeft{
+	float:left;
+	width:8px;
+	height:7px;
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+	margin-left:5px;
+	margin-top:5px;
+}
+.arrowOnRight{
+	float:right;
+	width:8px;
+	height:7px;
+	margin-right:5px;
+	margin-top:5px;
+	background-image: url('../images/arrow.png');
+	background-repeat: no-repeat;
+}
+
+#mapItem-wholeFoods{top:10px;left:125px;display:block;}
+#mapItem-starbucks{top:26px;left:30px;display:block;}
+#mapItem-EganAndSons{top:26px;left:170px;display:block;}
+#mapItem-halcyonBrasserie{top:26px;left:280px;display:block;}
+#mapItem-luigis{top:42px;left:92px;display:block;}
+#mapItem-firstUnitedChurch{top:42px;left:166px;display:block;}
+#mapItem-restaurantBlu{top:58px;left:26px;display:block;}
+#mapItem-urbanOutfitters{top:58px;left:160px;display:block;}
+#mapItem-raymonds{top:74px;left:70px;display:block;}
+#mapItem-anthropologie{top:74px;left:170px;display:block;}
+#mapItem-woodhouseDaySpa{top:90px;left:20px;display:block;}
+#mapItem-cubanPetes{top:90px;left:182px;display:block;}
+#mapItem-bangz{top:107px;left:116px;display:block;}
+#mapItem-theOrangeSquirrel{top:107px;left:196px;display:block;}
+#mapItem-outpostInTheBurbs{top:124px;left:32px;display:block;}
+#mapItem-theWellmontTheatre{top:124px;left:200px;display:block;}
+#mapItem-montclairPublicLibrary{top:141px;left:32px;display:block;}
+#mapItem-greekTaverna{top:141px;left:226px;display:block;}
+#mapItem-shoppingPlaza{top:204px;left:290px;display:block;}
+#mapItem-glenfieldPark{top:212px;left:138px;display:block;}
+#mapItem-ridgewoodElementarySchool{top:266px;left:131px;display:block;}
+#mapItem-christEpiscopalChurch{top:284px;left:193px;display:block;}
+#mapItem-glenRidgeChurch{top:302px;left:62px;display:block;}
+#mapItem-stJohnsChurch{top:320px;left:230px;display:block;}
+#mapItem-bloomfieldSteakSeafood{top:360px;left:235px;display:block;}
+#mapItem-bmwOfBloomfield{top:428px;left:425px;display:block;}
+#mapItem-watsessingPark{top:440px;left:230px;display:block;}
+#mapItem-watsessingStation{top:502px;left:390px;display:block;}
+#mapItem-ethicalPetProducts{top:550px;left:450px;display:block;}
+#mapItem-dunkinDonuts{top:570px;left:500px;display:block;}
+
+
+.propertyInformation{
+	padding-bottom:40px;
+}
+.propertyInformationTitle{
+	font-size:14px;
+	color:#9FCF67;
+	padding-bottom:10px;
+}
+.propertyInformationDescription{
+	color: #042859;
+}
+.columnImage{
+	/*padding-top: 40px;*/
+}
+
+
+
+
+
+
+.contactRow{
+	padding-bottom:10px;
+}
+.form-label{
+	width:120px;
+	float:left;
+	padding-right:10px;
+	line-height:14px;
+	top:2px;
+}
+.contactRow INPUT{
+	float:left;
+	width:175px;
+	height:18px;
+	border:1px solid #042859; 
+}
+#formSubmitBTN{
+	float:left;
+	margin-left:130px;
+	background-color:#042859;
+	color:#ffffff;
+	font-family: 'gotham_htfbook';
+	text-align: center;
+	padding-left:15px;
+	padding-right:15px;
+	font-size:12px;
+}
+.required{
+	float:left;
+	margin-left:10px;
+	font-size:10px;
+}
+
+
+#popupForm .contactRow .form-label {
+    float: left;
+    line-height: 14px;
+    padding-right: 10px;
+    top: 2px;
+    width: 120px;
+    color: #042859;
+    font-size:12px;
+}
+#popupForm .contactRow INPUT{
+	float:left;
+	width:215px;
+	height:18px;
+	border:1px solid #042859; 
+}
+#popupForm #formSubmitBTN {
+    background-color: #042859;
+    color: #FFFFFF;
+    float: left;
+    font-family: 'gotham_htfbook';
+    font-size: 12px;
+    margin-left: 130px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align: center;
+}
+#popupHeadline{
+	font-family: 'gotham_htfbook';
+	color:#042859;
+	font-size:18px;
+	padding-bottom:15px;
+}
+
+
+
+#theContactHolder{
+	position: fixed;
+	width:100%;
+	height:100%;
+	z-index:1000000;
+	display: none;
+	background-image: url('../images/directionsBack.png');
+}
+.contactform-frame {
+    background: none repeat scroll 0 0 #F5F3EF;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    width: 420px;
+}
+#contactformFrameBorder {
+    border: 15px solid #90D307;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 390px;
+    padding-top:10px;
+}
+#popupForm{
+	padding-top:20px;
+	width:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#theDirectionsHolder{
+	position: fixed;
+	width:100%;
+	height:100%;
+	z-index:1000000;
+	display: none;
+	background-image: url('../images/directionsBack.png');
+}
+.form-frame {
+    background: none repeat scroll 0 0 #F5F3EF;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+}
+#formFrameBorder {
+    border: 15px solid #90D307;
+    height: 570px;
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+}
+#slide2 {
+    height: 555px;
+    overflow: hidden;
+    padding: 10px 0px 15px;
+    width: 450px;
+}
+#backToForm {
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #032859;
+    font-family: 'gotham_htfbook';
+    padding-right:10px;
+}
+#backToPage {
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #032859;
+    font-family: 'gotham_htfbook';
+    padding-right:10px;
+}
+#theMap {
+    border: 1px solid #042859;
+    left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 428px;
+}
+#directionButtons {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 316px;
+}
+#fromSouth.selected {
+    background-image: url("../images/fromSouth-selected.png");
+}
+#fromSouth {
+    background-image: url("../images/fromSouth-unselected.png");
+}
+#fromNorth.selected {
+    background-image: url("../images/fromNorth-selected.png");
+}
+#fromNorth {
+    background-image: url("../images/fromNorth-unselected.png");
+}
+#fromSouth {
+    margin-right: 10px;
+}
+.directionButton {
+    cursor: pointer;
+    float: left;
+    height: 24px;
+    width: 153px;
+}
+#directionsSlider {
+    width: 820px;
+}
+.directions {
+    float: left;
+    font-size: 13px;
+    margin: 10px auto 10px 80px;
+    width: 330px;
+}
+.directions > UL > li {
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER STYLES */
+#theFooter{
+	width:980px;
+	border-top:2px solid #90D307;
+	margin-top:45px;
+	padding-top:15px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:20px;
+}
+#footerLeft{
+	float:left;
+	width:500px;
+	font-family: 'gotham_htfbook';
+	font-size:10px;
+	color:#042859;
+}
+#footerRight{
+	float:right;
+	width:250px;
+}
+
+
+
+
+
+
